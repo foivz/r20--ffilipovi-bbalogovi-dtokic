@@ -1,35 +1,31 @@
-# Inicijalne upute za prijavu projekta iz Programskog inženjerstva
-
-Poštovane kolegice i kolege, 
-
-čestitamo vam jer ste uspješno prijavili svoj projektni tim na kolegiju Programsko inženjerstvo, te je za vas automatski kreiran repozitorij koji ćete koristiti za verzioniranje vašega koda, ali i za pisanje dokumentacije.
-
-Ovaj dokument (README.md) predstavlja **osobnu iskaznicu vašeg projekta**. Vaš prvi zadatak, ukoliko niste odabrali da želite raditi na projektu sa gospodarstvom je **prijaviti vlastiti projektni prijedlog** na način da ćete prijavu vašeg projekta, sukladno uputama danim u ovom tekstu, napisati upravo u ovaj dokument, umjesto ovoga teksta.
-
-Za upute o sintaksi koju možete koristiti u ovom dokumentu i kod pisanje vaše projektne dokumentacije pogledajte [ovaj link](https://guides.github.com/features/mastering-markdown/).
-
-Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
-
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
+# Aplikacija Doma za starije i nemoćne osobe "Vedrana"
 
 ## Projektni tim
-
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
+Filip Filipović | ffilipovi@foi.hr | 0016129682 | filipovicf2105
+Branimir Balogović | bbalogovi@foi.hr | 0016129640 | bbalogovi
+Danijel Tokić | dtokic@foi.hr | 0016129661 | dtokic25
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Ideja je izrada aplikacije za Dom za starije i nemoćne osobe "Vedrana" koja bi pomogla u svakodnevnom poslovanju poduzeća. Glavna zamisao je digitalizacija poslovanja te digitalna evidencija korisnika i zaposlenika Doma i povezanost svega navedenog.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
+Kako su specifikacije projekta opisane u donjoj tablici, valja napomenuti da je zamišljen rad s bazom podataka, tako da će se svi podaci čuvati na serveru i bit će dostupni u bilo kojem trenutku. Specifikacije projekta su sljedeće:
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+F01 | Login | Za pristup aplikaciji potrebno se je ulogirati preko login forme koja na kraju sama raspoznaje ulogu prijavljene osobe u Domu te na temelju toga prikazuje drugačije sučelje (npr. njegovateljica neće imati pristup svim specifikacijama aplikacije kao administrator). | Filip Filipović
+F02 | Registracija zaposlenika | Registraciju zaposlenika obavlja administrator, a sama registracija radi na način da zaposlenik na mail dobije automatski generiranu privremenu lozinku s kojom se prijavljuje u aplikaciju. | Filip Filipović
+F03 | Evidencija zaposlenika | Pregled sadašnjih i prošlih zaposlenika i mogućnost dodavanja novog u aplikaciju, kao i zabrana pristupa bivšem zaposleniku. | Filip Filipović
+F04 | Evidencija korisnika | Pregled sadašnjih i prošlih korisnika i mogućnost dodavanja novog u aplikaciju i pregled usluga njege koju je svaki od korisnika zaprimio (evidencija zdravstvenog stanja svakog korisnika). | Branimir Balogović
+F05 | Automatsko generiranje obrazaca | Automatsko generiranje obrazaca za svakog od korisnika (ugovor, suglasnost, GDPR obrzac i dr.). | Branimir Balogović
+F06 | Izrada jelovnika | Izrada i uređivanje (ukoliko je to potrebno) jelovnika, izdrada se radi tjedan dana unaprijed. | Danijel Tokić
+F07 | Evidencija skladišta | Evidencija proizvoda na skladištu, od hrane do proizvoda potrebnih za uslugu njege uz grafički prikaz podataka. | Danijel Tokić
+F08 | Nabava proizvoda | Automatsko generiranje liste sa potrebnim proizvodima koji se naručuju: kada se dosegne niska količina određenog proizvoda ili namirnice potrebne za jelovnik. | Danijel Tokić
+F09 | Korisničko sučelje | Izrada i dizajn korisničkog sučelja primjereno korisnicima aplikacije. | Branimir Balogović
+F10 | Baza podataka | Izrada baze podataka i komunikacija iste s aplikacijom. | Danijel Tokić
+F11 | Korisničke upute | Korisničke upute za lakše snalaženje korisnika u aplikaciji. | Filip Filipović
 
 ## Tehnologije i oprema
-Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
+Za bazu podataka koristit ćemo MySql, MySql Workbench, MySql Server. Za izradu aplikacije koristit ćemo MS Visual Studio kao IDE i C# kao programski jezik za realizaciju iste (za pomoć u programiranju služit ćemo se službenom C# dokumentacijom). Od ostalih tehnologija koristi ćemo Differ za komunikaciju te GitHub za verzioniranje projekta, odnosno aplikacije.
