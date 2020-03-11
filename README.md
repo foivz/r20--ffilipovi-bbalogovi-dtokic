@@ -1,4 +1,4 @@
-# Aplikacija Doma za starije i nemoćne osobe "Vedrana"
+# PI20-031 Aplikacija Doma za starije i nemoćne osobe "Vedrana" (mentor: mag. inf. Marko Mijač)
 
 ## Projektni tim
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
