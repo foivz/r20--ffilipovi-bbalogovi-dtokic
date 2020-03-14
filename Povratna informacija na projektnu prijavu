@@ -1,0 +1,9 @@
+Poštovani članovi tima,
+
+tema je prihvaćena, međutim potrebno je doraditi projektnu prijavu prema sljedećim komentarima:
+* Korisničko sučelje, baza podataka i korisničke upute nisu funkcionalnosti aplikacije.
+* Funkcionalnost Evidencija korisnika razbiti na funkcionalnosti "Prijem novog korisnika" (koja rezultira dodjelom
+smještaja korisniku i kreiranjem njegovog kartona/dosjea), te "Evidencija njege" (koja omogućava evidenciju postupaka provedenih
+nad korisnikom doma te opis stanja korisnika doma).
+* Pod izrada jelovnika omogućite dodjelu jelovnika pojedinom korisniku. Neki korisnici možda moraju imati prilagođen jelovnik
+(npr. ako su alergični na nešto).
