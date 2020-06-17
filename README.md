@@ -26,4 +26,4 @@ F08 | Evidencija skladišta | Evidencija proizvoda na skladištu, od hrane do pr
 F09 | Nabava proizvoda | Automatsko generiranje liste sa potrebnim proizvodima koji se naručuju: kada se dosegne niska količina određenog proizvoda ili namirnice potrebne za jelovnik. | Danijel Tokić
 
 ## Tehnologije i oprema
-Za bazu podataka koristit ćemo MySql, MySql Workbench, MySql Server. Za izradu aplikacije koristit ćemo MS Visual Studio kao IDE i C# kao programski jezik za realizaciju iste (za pomoć u programiranju služit ćemo se službenom C# dokumentacijom). Od ostalih tehnologija koristi ćemo Differ za komunikaciju te GitHub za verzioniranje projekta, odnosno aplikacije.
+Za bazu podataka koristit ćemo Microsoft SQL Server te SQL Server Management Studio (SSMS) kao alat za upravljanje bazom. Za izradu aplikacije koristit ćemo MS Visual Studio kao IDE i C# kao programski jezik za realizaciju iste (za pomoć u programiranju služit ćemo se službenom C# dokumentacijom). Od ostalih tehnologija koristi ćemo Differ za komunikaciju te GitHub za verzioniranje projekta, odnosno aplikacije.
