@@ -21,7 +21,7 @@ F03 | Evidencija zaposlenika | Pregled sadašnjih i prošlih zaposlenika i mogu�
 F04 | Prijem novog korisnika | Prijem novog i pregled sadašnjih i prošlih korisnika Doma. | Branimir Balogović
 F05 | Evidencija njege | Pregled usluga njege koju je svaki od korisnika zaprimio (evidencija zdravstvenog stanja svakog korisnika). | Branimir Balogović
 F06 | Automatsko generiranje obrazaca | Automatsko generiranje obrazaca za svakog od korisnika (ugovor, suglasnost, GDPR obrzac i dr.). | Branimir Balogović
-F07 | Izrada jelovnika | Izrada i uređivanje (ukoliko je to potrebno) jelovnika, izrada se vrši tjedan dana unaprijed. Mogućnost dodjeljivanja jelovnika korisnicima. | Danijel Tokić
+F07 | Izrada jelovnika | Izrada i uređivanje (ukoliko je to potrebno) jelovnika, izrada se vrši tjedan dana unaprijed. Mogućnost izrade specijalnih jelovnika za korisnike sa alergijama na određene proizvode. | Danijel Tokić
 F08 | Evidencija skladišta | Evidencija proizvoda na skladištu, od hrane do proizvoda potrebnih za uslugu njege uz grafički prikaz podataka. | Danijel Tokić
 F09 | Nabava proizvoda | Automatsko generiranje liste sa potrebnim proizvodima koji se naručuju: kada se dosegne niska količina određenog proizvoda ili namirnice potrebne za jelovnik. | Danijel Tokić
 
