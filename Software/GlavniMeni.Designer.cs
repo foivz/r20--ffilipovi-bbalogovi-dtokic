@@ -70,10 +70,11 @@
             this.korisniciBtn.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
             this.korisniciBtn.IconColor = System.Drawing.Color.Black;
             this.korisniciBtn.IconSize = 32;
-            this.korisniciBtn.Location = new System.Drawing.Point(0, 210);
+            this.korisniciBtn.Location = new System.Drawing.Point(0, 259);
+            this.korisniciBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.korisniciBtn.Name = "korisniciBtn";
             this.korisniciBtn.Rotation = 0D;
-            this.korisniciBtn.Size = new System.Drawing.Size(250, 60);
+            this.korisniciBtn.Size = new System.Drawing.Size(333, 74);
             this.korisniciBtn.TabIndex = 7;
             this.korisniciBtn.Text = "Korisnici";
             this.korisniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,11 +93,12 @@
             this.zaposleniciBtn.IconChar = FontAwesome.Sharp.IconChar.UserNurse;
             this.zaposleniciBtn.IconColor = System.Drawing.Color.Black;
             this.zaposleniciBtn.IconSize = 32;
-            this.zaposleniciBtn.Location = new System.Drawing.Point(0, 150);
+            this.zaposleniciBtn.Location = new System.Drawing.Point(0, 185);
+            this.zaposleniciBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zaposleniciBtn.Name = "zaposleniciBtn";
             this.zaposleniciBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.zaposleniciBtn.Rotation = 0D;
-            this.zaposleniciBtn.Size = new System.Drawing.Size(250, 60);
+            this.zaposleniciBtn.Size = new System.Drawing.Size(333, 74);
             this.zaposleniciBtn.TabIndex = 5;
             this.zaposleniciBtn.Text = "Zaposlenici";
             this.zaposleniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -110,8 +112,9 @@
             this.logoPanel.Controls.Add(this.pictureBox1);
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
+            this.logoPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(250, 150);
+            this.logoPanel.Size = new System.Drawing.Size(333, 185);
             this.logoPanel.TabIndex = 0;
             // 
             // pictureBox1
@@ -119,8 +122,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(333, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -133,9 +137,10 @@
             this.panel1.Controls.Add(this.aktivniMeniLbl);
             this.panel1.Controls.Add(this.aktivniMeniIcon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(250, 0);
+            this.panel1.Location = new System.Drawing.Point(333, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 75);
+            this.panel1.Size = new System.Drawing.Size(1112, 92);
             this.panel1.TabIndex = 5;
             // 
             // userBtn
@@ -152,12 +157,13 @@
             this.userBtn.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.userBtn.IconSize = 24;
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.userBtn.Location = new System.Drawing.Point(622, 31);
+            this.userBtn.Location = new System.Drawing.Point(829, 38);
+            this.userBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userBtn.Name = "userBtn";
-            this.userBtn.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.userBtn.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
             this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.userBtn.Rotation = 0D;
-            this.userBtn.Size = new System.Drawing.Size(200, 38);
+            this.userBtn.Size = new System.Drawing.Size(267, 47);
             this.userBtn.TabIndex = 6;
             this.userBtn.Text = "e-mail";
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -170,9 +176,10 @@
             this.aktivniMeniLbl.AutoSize = true;
             this.aktivniMeniLbl.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aktivniMeniLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
-            this.aktivniMeniLbl.Location = new System.Drawing.Point(72, 28);
+            this.aktivniMeniLbl.Location = new System.Drawing.Point(96, 34);
+            this.aktivniMeniLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.aktivniMeniLbl.Name = "aktivniMeniLbl";
-            this.aktivniMeniLbl.Size = new System.Drawing.Size(168, 30);
+            this.aktivniMeniLbl.Size = new System.Drawing.Size(209, 37);
             this.aktivniMeniLbl.TabIndex = 1;
             this.aktivniMeniLbl.Text = "Početna stranica";
             // 
@@ -182,10 +189,11 @@
             this.aktivniMeniIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.aktivniMeniIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
-            this.aktivniMeniIcon.IconSize = 50;
-            this.aktivniMeniIcon.Location = new System.Drawing.Point(16, 19);
+            this.aktivniMeniIcon.IconSize = 62;
+            this.aktivniMeniIcon.Location = new System.Drawing.Point(21, 23);
+            this.aktivniMeniIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.aktivniMeniIcon.Name = "aktivniMeniIcon";
-            this.aktivniMeniIcon.Size = new System.Drawing.Size(50, 50);
+            this.aktivniMeniIcon.Size = new System.Drawing.Size(67, 62);
             this.aktivniMeniIcon.TabIndex = 0;
             this.aktivniMeniIcon.TabStop = false;
             // 
@@ -201,8 +209,9 @@
             this.sideNavPanel.Controls.Add(this.logoPanel);
             this.sideNavPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideNavPanel.Location = new System.Drawing.Point(0, 0);
+            this.sideNavPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sideNavPanel.Name = "sideNavPanel";
-            this.sideNavPanel.Size = new System.Drawing.Size(250, 729);
+            this.sideNavPanel.Size = new System.Drawing.Size(333, 897);
             this.sideNavPanel.TabIndex = 3;
             // 
             // jelovniciPnl
@@ -210,9 +219,10 @@
             this.jelovniciPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(237)))), ((int)(((byte)(205)))));
             this.jelovniciPnl.Controls.Add(this.jelaBtn);
             this.jelovniciPnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.jelovniciPnl.Location = new System.Drawing.Point(0, 450);
+            this.jelovniciPnl.Location = new System.Drawing.Point(0, 555);
+            this.jelovniciPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jelovniciPnl.Name = "jelovniciPnl";
-            this.jelovniciPnl.Size = new System.Drawing.Size(250, 60);
+            this.jelovniciPnl.Size = new System.Drawing.Size(333, 74);
             this.jelovniciPnl.TabIndex = 12;
             // 
             // jelaBtn
@@ -226,9 +236,10 @@
             this.jelaBtn.IconColor = System.Drawing.Color.Black;
             this.jelaBtn.IconSize = 16;
             this.jelaBtn.Location = new System.Drawing.Point(0, 0);
+            this.jelaBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jelaBtn.Name = "jelaBtn";
             this.jelaBtn.Rotation = 0D;
-            this.jelaBtn.Size = new System.Drawing.Size(250, 60);
+            this.jelaBtn.Size = new System.Drawing.Size(333, 74);
             this.jelaBtn.TabIndex = 0;
             this.jelaBtn.Text = "Jela";
             this.jelaBtn.UseVisualStyleBackColor = true;
@@ -245,10 +256,11 @@
             this.jelovniciBtn.IconChar = FontAwesome.Sharp.IconChar.Utensils;
             this.jelovniciBtn.IconColor = System.Drawing.Color.Black;
             this.jelovniciBtn.IconSize = 32;
-            this.jelovniciBtn.Location = new System.Drawing.Point(0, 390);
+            this.jelovniciBtn.Location = new System.Drawing.Point(0, 481);
+            this.jelovniciBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jelovniciBtn.Name = "jelovniciBtn";
             this.jelovniciBtn.Rotation = 0D;
-            this.jelovniciBtn.Size = new System.Drawing.Size(250, 60);
+            this.jelovniciBtn.Size = new System.Drawing.Size(333, 74);
             this.jelovniciBtn.TabIndex = 10;
             this.jelovniciBtn.Text = "Jelovnici";
             this.jelovniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -267,10 +279,11 @@
             this.skladisteBtn.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
             this.skladisteBtn.IconColor = System.Drawing.Color.Black;
             this.skladisteBtn.IconSize = 32;
-            this.skladisteBtn.Location = new System.Drawing.Point(0, 330);
+            this.skladisteBtn.Location = new System.Drawing.Point(0, 407);
+            this.skladisteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.skladisteBtn.Name = "skladisteBtn";
             this.skladisteBtn.Rotation = 0D;
-            this.skladisteBtn.Size = new System.Drawing.Size(250, 60);
+            this.skladisteBtn.Size = new System.Drawing.Size(333, 74);
             this.skladisteBtn.TabIndex = 9;
             this.skladisteBtn.Text = "Skladište";
             this.skladisteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,9 +296,10 @@
             this.korisniciPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(237)))), ((int)(((byte)(205)))));
             this.korisniciPnl.Controls.Add(this.uslugeBtn);
             this.korisniciPnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.korisniciPnl.Location = new System.Drawing.Point(0, 270);
+            this.korisniciPnl.Location = new System.Drawing.Point(0, 333);
+            this.korisniciPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.korisniciPnl.Name = "korisniciPnl";
-            this.korisniciPnl.Size = new System.Drawing.Size(250, 60);
+            this.korisniciPnl.Size = new System.Drawing.Size(333, 74);
             this.korisniciPnl.TabIndex = 8;
             // 
             // uslugeBtn
@@ -299,9 +313,10 @@
             this.uslugeBtn.IconColor = System.Drawing.Color.Black;
             this.uslugeBtn.IconSize = 16;
             this.uslugeBtn.Location = new System.Drawing.Point(0, 0);
+            this.uslugeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uslugeBtn.Name = "uslugeBtn";
             this.uslugeBtn.Rotation = 0D;
-            this.uslugeBtn.Size = new System.Drawing.Size(250, 60);
+            this.uslugeBtn.Size = new System.Drawing.Size(333, 74);
             this.uslugeBtn.TabIndex = 0;
             this.uslugeBtn.Text = "Usluge";
             this.uslugeBtn.UseVisualStyleBackColor = true;
@@ -313,9 +328,10 @@
             this.userPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.userPnl.Controls.Add(this.odjavaBtn);
             this.userPnl.Controls.Add(this.promijeniPassBtn);
-            this.userPnl.Location = new System.Drawing.Point(622, 81);
+            this.userPnl.Location = new System.Drawing.Point(829, 100);
+            this.userPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userPnl.Name = "userPnl";
-            this.userPnl.Size = new System.Drawing.Size(200, 100);
+            this.userPnl.Size = new System.Drawing.Size(267, 123);
             this.userPnl.TabIndex = 7;
             // 
             // odjavaBtn
@@ -329,11 +345,12 @@
             this.odjavaBtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.odjavaBtn.IconColor = System.Drawing.Color.Black;
             this.odjavaBtn.IconSize = 32;
-            this.odjavaBtn.Location = new System.Drawing.Point(0, 50);
+            this.odjavaBtn.Location = new System.Drawing.Point(0, 62);
+            this.odjavaBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.odjavaBtn.Name = "odjavaBtn";
             this.odjavaBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.odjavaBtn.Rotation = 0D;
-            this.odjavaBtn.Size = new System.Drawing.Size(200, 50);
+            this.odjavaBtn.Size = new System.Drawing.Size(267, 62);
             this.odjavaBtn.TabIndex = 7;
             this.odjavaBtn.Text = "Odjava";
             this.odjavaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -353,10 +370,11 @@
             this.promijeniPassBtn.IconColor = System.Drawing.Color.Black;
             this.promijeniPassBtn.IconSize = 32;
             this.promijeniPassBtn.Location = new System.Drawing.Point(0, 0);
+            this.promijeniPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.promijeniPassBtn.Name = "promijeniPassBtn";
             this.promijeniPassBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.promijeniPassBtn.Rotation = 0D;
-            this.promijeniPassBtn.Size = new System.Drawing.Size(200, 50);
+            this.promijeniPassBtn.Size = new System.Drawing.Size(267, 62);
             this.promijeniPassBtn.TabIndex = 6;
             this.promijeniPassBtn.Text = "Promijeni zaporku";
             this.promijeniPassBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -368,23 +386,26 @@
             // 
             this.formPanel.Controls.Add(this.userPnl);
             this.formPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formPanel.Location = new System.Drawing.Point(250, 0);
+            this.formPanel.Location = new System.Drawing.Point(333, 0);
+            this.formPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.formPanel.Name = "formPanel";
-            this.formPanel.Padding = new System.Windows.Forms.Padding(0, 75, 0, 0);
-            this.formPanel.Size = new System.Drawing.Size(834, 729);
+            this.formPanel.Padding = new System.Windows.Forms.Padding(0, 92, 0, 0);
+            this.formPanel.Size = new System.Drawing.Size(1112, 897);
             this.formPanel.TabIndex = 4;
             // 
             // GlavniMeni
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 729);
+            this.ClientSize = new System.Drawing.Size(1445, 897);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.formPanel);
             this.Controls.Add(this.sideNavPanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GlavniMeni";
             this.Text = "Dom \"Vedrana\"";
             this.Load += new System.EventHandler(this.GlavniMeni_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GlavniMeni_KeyDown);
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

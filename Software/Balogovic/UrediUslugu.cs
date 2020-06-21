@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace Vedrana.Balogovic
         {
             InitializeComponent();
             _usluga = usl;
+            this.KeyPreview = true;
         }
 
         private void UrediUslugu_Load(object sender, EventArgs e)
@@ -48,6 +50,14 @@ namespace Vedrana.Balogovic
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void UrediUslugu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
             }
         }
     }

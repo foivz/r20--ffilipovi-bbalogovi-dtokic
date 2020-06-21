@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aac12c93d9f74d0c967698f5f1c91f49" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Model.evidencijaNjege" Width="1.5" PointX="12.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.imaUslugu" Width="1.5" PointX="10.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.jelo" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.jelovnik" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.korisnik" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.koristiProizvod" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.osoba" Width="1.5" PointX="5.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.seNalazi" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.seSastoji" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.soba" Width="1.5" PointX="5.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.usluga" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.zaposlenik" Width="1.5" PointX="8" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.evidencijaNjege_imaUslugu_imaUsluguId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.evidencijaNjege_zaposlenik_oib_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.imaUslugu_korisnik_oib_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.imaUslugu_usluga_uslugaId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.seNalazi_jelo_jeloId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.seSastoji_jelo_jeloId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.seNalazi_jelovnik_jelovnikId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.korisnik_osoba_oib_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.korisnik_soba_brojSobe_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.koristiProizvod_usluga_uslugaId_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.zaposlenik_osoba_oib_fk" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.narudzba" Width="1.5" PointX="0.75" PointY="19.375" />
+        <EntityTypeShape EntityType="Model.proizvod" Width="1.5" PointX="0.75" PointY="7" />
+        <EntityTypeShape EntityType="Model.seNarucuje" Width="1.5" PointX="3" PointY="10.125" />
+        <AssociationConnector Association="Model.koristiProizvod_proizvod_proizvodId_fk" />
+        <AssociationConnector Association="Model.seNarucuje_narudzba_narudzbaId_fk" />
+        <AssociationConnector Association="Model.seNarucuje_proizvod_proizvodId_fk" />
+        <AssociationConnector Association="Model.seSastoji_proizvod_proizvodId_fk" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

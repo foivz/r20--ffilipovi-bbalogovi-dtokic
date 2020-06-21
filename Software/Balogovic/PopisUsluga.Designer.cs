@@ -39,12 +39,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label12.Location = new System.Drawing.Point(22, 29);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(29, 36);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 23);
+            this.label12.Size = new System.Drawing.Size(158, 29);
             this.label12.TabIndex = 87;
             this.label12.Text = "Popis usluga:";
             // 
@@ -53,11 +52,11 @@
             this.btnObrisiUslugu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnObrisiUslugu.FlatAppearance.BorderSize = 0;
             this.btnObrisiUslugu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnObrisiUslugu.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnObrisiUslugu.Location = new System.Drawing.Point(670, 327);
-            this.btnObrisiUslugu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnObrisiUslugu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnObrisiUslugu.Location = new System.Drawing.Point(893, 402);
+            this.btnObrisiUslugu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnObrisiUslugu.Name = "btnObrisiUslugu";
-            this.btnObrisiUslugu.Size = new System.Drawing.Size(107, 29);
+            this.btnObrisiUslugu.Size = new System.Drawing.Size(143, 36);
             this.btnObrisiUslugu.TabIndex = 86;
             this.btnObrisiUslugu.Text = "Obrisi uslugu";
             this.btnObrisiUslugu.UseVisualStyleBackColor = false;
@@ -68,11 +67,11 @@
             this.btnUrediUslugu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnUrediUslugu.FlatAppearance.BorderSize = 0;
             this.btnUrediUslugu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrediUslugu.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnUrediUslugu.Location = new System.Drawing.Point(558, 327);
-            this.btnUrediUslugu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUrediUslugu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnUrediUslugu.Location = new System.Drawing.Point(744, 402);
+            this.btnUrediUslugu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUrediUslugu.Name = "btnUrediUslugu";
-            this.btnUrediUslugu.Size = new System.Drawing.Size(107, 29);
+            this.btnUrediUslugu.Size = new System.Drawing.Size(143, 36);
             this.btnUrediUslugu.TabIndex = 85;
             this.btnUrediUslugu.Text = "Uredi uslugu";
             this.btnUrediUslugu.UseVisualStyleBackColor = false;
@@ -83,11 +82,11 @@
             this.btnNovaUsluga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnNovaUsluga.FlatAppearance.BorderSize = 0;
             this.btnNovaUsluga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovaUsluga.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnNovaUsluga.Location = new System.Drawing.Point(446, 327);
-            this.btnNovaUsluga.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNovaUsluga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnNovaUsluga.Location = new System.Drawing.Point(595, 402);
+            this.btnNovaUsluga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNovaUsluga.Name = "btnNovaUsluga";
-            this.btnNovaUsluga.Size = new System.Drawing.Size(107, 29);
+            this.btnNovaUsluga.Size = new System.Drawing.Size(143, 36);
             this.btnNovaUsluga.TabIndex = 84;
             this.btnNovaUsluga.Text = "Nova usluga";
             this.btnNovaUsluga.UseVisualStyleBackColor = false;
@@ -96,28 +95,29 @@
             // dgvUsluge
             // 
             this.dgvUsluge.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsluge.Location = new System.Drawing.Point(27, 67);
-            this.dgvUsluge.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvUsluge.Location = new System.Drawing.Point(36, 82);
+            this.dgvUsluge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvUsluge.Name = "dgvUsluge";
             this.dgvUsluge.RowHeadersWidth = 51;
             this.dgvUsluge.RowTemplate.Height = 24;
-            this.dgvUsluge.Size = new System.Drawing.Size(750, 245);
+            this.dgvUsluge.Size = new System.Drawing.Size(1000, 302);
             this.dgvUsluge.TabIndex = 83;
             // 
             // PopisUsluga
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 554);
+            this.ClientSize = new System.Drawing.Size(1083, 682);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnObrisiUslugu);
             this.Controls.Add(this.btnUrediUslugu);
             this.Controls.Add(this.btnNovaUsluga);
             this.Controls.Add(this.dgvUsluge);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PopisUsluga";
             this.Text = "Popis usluga";
             this.Load += new System.EventHandler(this.PopisUsluga_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PopisUsluga_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsluge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

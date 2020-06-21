@@ -50,60 +50,55 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(33, 52);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(44, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(322, 18);
+            this.label2.Size = new System.Drawing.Size(395, 24);
             this.label2.TabIndex = 41;
             this.label2.Text = "Prikaz svih korisnika, pretraga i uređivanje istih";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 16.2F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(32, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(43, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 27);
+            this.label1.Size = new System.Drawing.Size(267, 32);
             this.label1.TabIndex = 40;
             this.label1.Text = "Evidencija korisnika";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(34, 164);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(45, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 18);
+            this.label5.Size = new System.Drawing.Size(84, 24);
             this.label5.TabIndex = 39;
             this.label5.Text = "Prezime:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(34, 136);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(45, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 18);
+            this.label4.Size = new System.Drawing.Size(46, 24);
             this.label4.TabIndex = 38;
             this.label4.Text = "Ime:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(33, 104);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(44, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 22);
+            this.label3.Size = new System.Drawing.Size(185, 26);
             this.label3.TabIndex = 37;
             this.label3.Text = "Pretraži korisnika:";
             // 
@@ -112,11 +107,11 @@
             this.btnEvidentiraneNjege.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnEvidentiraneNjege.FlatAppearance.BorderSize = 0;
             this.btnEvidentiraneNjege.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvidentiraneNjege.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEvidentiraneNjege.Location = new System.Drawing.Point(655, 448);
-            this.btnEvidentiraneNjege.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEvidentiraneNjege.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvidentiraneNjege.Location = new System.Drawing.Point(873, 551);
+            this.btnEvidentiraneNjege.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEvidentiraneNjege.Name = "btnEvidentiraneNjege";
-            this.btnEvidentiraneNjege.Size = new System.Drawing.Size(118, 32);
+            this.btnEvidentiraneNjege.Size = new System.Drawing.Size(157, 39);
             this.btnEvidentiraneNjege.TabIndex = 36;
             this.btnEvidentiraneNjege.Text = "Evidentirane njege";
             this.btnEvidentiraneNjege.UseVisualStyleBackColor = false;
@@ -127,11 +122,11 @@
             this.btnEvidentirajNjegu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnEvidentirajNjegu.FlatAppearance.BorderSize = 0;
             this.btnEvidentirajNjegu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvidentirajNjegu.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEvidentirajNjegu.Location = new System.Drawing.Point(532, 448);
-            this.btnEvidentirajNjegu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEvidentirajNjegu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvidentirajNjegu.Location = new System.Drawing.Point(709, 551);
+            this.btnEvidentirajNjegu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEvidentirajNjegu.Name = "btnEvidentirajNjegu";
-            this.btnEvidentirajNjegu.Size = new System.Drawing.Size(118, 32);
+            this.btnEvidentirajNjegu.Size = new System.Drawing.Size(157, 39);
             this.btnEvidentirajNjegu.TabIndex = 35;
             this.btnEvidentirajNjegu.Text = "Evidentiraj njegu";
             this.btnEvidentirajNjegu.UseVisualStyleBackColor = false;
@@ -142,11 +137,11 @@
             this.btnUrediKorisnika.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnUrediKorisnika.FlatAppearance.BorderSize = 0;
             this.btnUrediKorisnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrediKorisnika.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUrediKorisnika.Location = new System.Drawing.Point(144, 448);
-            this.btnUrediKorisnika.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUrediKorisnika.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUrediKorisnika.Location = new System.Drawing.Point(192, 551);
+            this.btnUrediKorisnika.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUrediKorisnika.Name = "btnUrediKorisnika";
-            this.btnUrediKorisnika.Size = new System.Drawing.Size(102, 32);
+            this.btnUrediKorisnika.Size = new System.Drawing.Size(136, 39);
             this.btnUrediKorisnika.TabIndex = 34;
             this.btnUrediKorisnika.Text = "Uredi korisnika";
             this.btnUrediKorisnika.UseVisualStyleBackColor = false;
@@ -157,11 +152,11 @@
             this.btnMakniFiltere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnMakniFiltere.FlatAppearance.BorderSize = 0;
             this.btnMakniFiltere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMakniFiltere.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMakniFiltere.Location = new System.Drawing.Point(369, 164);
-            this.btnMakniFiltere.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMakniFiltere.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakniFiltere.Location = new System.Drawing.Point(492, 202);
+            this.btnMakniFiltere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMakniFiltere.Name = "btnMakniFiltere";
-            this.btnMakniFiltere.Size = new System.Drawing.Size(83, 22);
+            this.btnMakniFiltere.Size = new System.Drawing.Size(111, 27);
             this.btnMakniFiltere.TabIndex = 33;
             this.btnMakniFiltere.Text = "Makni filtere";
             this.btnMakniFiltere.UseVisualStyleBackColor = false;
@@ -172,11 +167,11 @@
             this.btnFiltriraj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnFiltriraj.FlatAppearance.BorderSize = 0;
             this.btnFiltriraj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltriraj.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltriraj.Location = new System.Drawing.Point(281, 164);
-            this.btnFiltriraj.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiltriraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltriraj.Location = new System.Drawing.Point(375, 202);
+            this.btnFiltriraj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFiltriraj.Name = "btnFiltriraj";
-            this.btnFiltriraj.Size = new System.Drawing.Size(83, 22);
+            this.btnFiltriraj.Size = new System.Drawing.Size(111, 27);
             this.btnFiltriraj.TabIndex = 32;
             this.btnFiltriraj.Text = "Filtriraj";
             this.btnFiltriraj.UseVisualStyleBackColor = false;
@@ -185,20 +180,20 @@
             // txtPrezime
             // 
             this.txtPrezime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPrezime.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrezime.Location = new System.Drawing.Point(110, 164);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrezime.Location = new System.Drawing.Point(147, 202);
+            this.txtPrezime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(147, 20);
+            this.txtPrezime.Size = new System.Drawing.Size(195, 22);
             this.txtPrezime.TabIndex = 31;
             // 
             // txtIme
             // 
-            this.txtIme.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIme.Location = new System.Drawing.Point(110, 136);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIme.Location = new System.Drawing.Point(147, 167);
+            this.txtIme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(147, 20);
+            this.txtIme.Size = new System.Drawing.Size(195, 22);
             this.txtIme.TabIndex = 30;
             // 
             // btnUkloni
@@ -206,11 +201,11 @@
             this.btnUkloni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnUkloni.FlatAppearance.BorderSize = 0;
             this.btnUkloni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUkloni.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUkloni.Location = new System.Drawing.Point(250, 448);
-            this.btnUkloni.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUkloni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUkloni.Location = new System.Drawing.Point(333, 551);
+            this.btnUkloni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUkloni.Name = "btnUkloni";
-            this.btnUkloni.Size = new System.Drawing.Size(102, 32);
+            this.btnUkloni.Size = new System.Drawing.Size(136, 39);
             this.btnUkloni.TabIndex = 29;
             this.btnUkloni.Text = "Ukloni korisnika";
             this.btnUkloni.UseVisualStyleBackColor = false;
@@ -221,12 +216,12 @@
             this.cbxFilter.AutoSize = true;
             this.cbxFilter.FlatAppearance.BorderSize = 0;
             this.cbxFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbxFilter.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.cbxFilter.Location = new System.Drawing.Point(618, 164);
-            this.cbxFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxFilter.Location = new System.Drawing.Point(824, 202);
+            this.cbxFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxFilter.Name = "cbxFilter";
-            this.cbxFilter.Size = new System.Drawing.Size(160, 21);
+            this.cbxFilter.Size = new System.Drawing.Size(194, 24);
             this.cbxFilter.TabIndex = 28;
             this.cbxFilter.Text = "Prikaži bivše korisnike";
             this.cbxFilter.UseVisualStyleBackColor = true;
@@ -237,11 +232,11 @@
             this.btnNoviKorisnik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnNoviKorisnik.FlatAppearance.BorderSize = 0;
             this.btnNoviKorisnik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNoviKorisnik.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoviKorisnik.Location = new System.Drawing.Point(38, 448);
-            this.btnNoviKorisnik.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNoviKorisnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoviKorisnik.Location = new System.Drawing.Point(51, 551);
+            this.btnNoviKorisnik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNoviKorisnik.Name = "btnNoviKorisnik";
-            this.btnNoviKorisnik.Size = new System.Drawing.Size(102, 32);
+            this.btnNoviKorisnik.Size = new System.Drawing.Size(136, 39);
             this.btnNoviKorisnik.TabIndex = 27;
             this.btnNoviKorisnik.Text = "Novi korisnik";
             this.btnNoviKorisnik.UseVisualStyleBackColor = false;
@@ -250,19 +245,19 @@
             // dgvKorisnici
             // 
             this.dgvKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKorisnici.Location = new System.Drawing.Point(38, 197);
-            this.dgvKorisnici.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvKorisnici.Location = new System.Drawing.Point(51, 242);
+            this.dgvKorisnici.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvKorisnici.Name = "dgvKorisnici";
             this.dgvKorisnici.RowHeadersWidth = 51;
             this.dgvKorisnici.RowTemplate.Height = 24;
-            this.dgvKorisnici.Size = new System.Drawing.Size(735, 236);
+            this.dgvKorisnici.Size = new System.Drawing.Size(980, 290);
             this.dgvKorisnici.TabIndex = 26;
             // 
             // EvidencijaKorisnika
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 554);
+            this.ClientSize = new System.Drawing.Size(1083, 682);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
@@ -279,10 +274,11 @@
             this.Controls.Add(this.cbxFilter);
             this.Controls.Add(this.btnNoviKorisnik);
             this.Controls.Add(this.dgvKorisnici);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EvidencijaKorisnika";
             this.Text = "Evidencija korisnika";
             this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EvidencijaKorisnika_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

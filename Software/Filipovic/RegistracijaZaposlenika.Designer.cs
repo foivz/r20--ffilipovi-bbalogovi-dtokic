@@ -52,172 +52,163 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label12.Location = new System.Drawing.Point(17, 18);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(23, 22);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(216, 23);
+            this.label12.Size = new System.Drawing.Size(274, 29);
             this.label12.TabIndex = 140;
             this.label12.Text = "Registracija zaposlenika";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label8.Location = new System.Drawing.Point(45, 161);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(60, 198);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 18);
+            this.label8.Size = new System.Drawing.Size(75, 24);
             this.label8.TabIndex = 139;
             this.label8.Text = "Adresa:";
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtAdresa.Location = new System.Drawing.Point(160, 159);
-            this.txtAdresa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAdresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtAdresa.Location = new System.Drawing.Point(213, 196);
+            this.txtAdresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(154, 20);
+            this.txtAdresa.Size = new System.Drawing.Size(204, 22);
             this.txtAdresa.TabIndex = 138;
             // 
             // dtpDatumRodjenja
             // 
-            this.dtpDatumRodjenja.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.dtpDatumRodjenja.Location = new System.Drawing.Point(160, 227);
-            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.dtpDatumRodjenja.Location = new System.Drawing.Point(213, 279);
+            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDatumRodjenja.Name = "dtpDatumRodjenja";
-            this.dtpDatumRodjenja.Size = new System.Drawing.Size(154, 20);
+            this.dtpDatumRodjenja.Size = new System.Drawing.Size(204, 22);
             this.dtpDatumRodjenja.TabIndex = 137;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label6.Location = new System.Drawing.Point(45, 296);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(60, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 18);
+            this.label6.Size = new System.Drawing.Size(64, 24);
             this.label6.TabIndex = 134;
             this.label6.Text = "Uloga:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(45, 262);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(60, 322);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
+            this.label5.Size = new System.Drawing.Size(68, 24);
             this.label5.TabIndex = 132;
             this.label5.Text = "E-mail:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtEmail.Location = new System.Drawing.Point(160, 260);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtEmail.Location = new System.Drawing.Point(213, 320);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(154, 20);
+            this.txtEmail.Size = new System.Drawing.Size(204, 22);
             this.txtEmail.TabIndex = 131;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(45, 229);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(60, 282);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 18);
+            this.label4.Size = new System.Drawing.Size(139, 24);
             this.label4.TabIndex = 130;
             this.label4.Text = "Datum rođenja:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(45, 197);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(60, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
+            this.label3.Size = new System.Drawing.Size(76, 24);
             this.label3.TabIndex = 129;
             this.label3.Text = "Kontakt:";
             // 
             // txtKontakt
             // 
-            this.txtKontakt.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtKontakt.Location = new System.Drawing.Point(160, 195);
-            this.txtKontakt.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKontakt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtKontakt.Location = new System.Drawing.Point(213, 240);
+            this.txtKontakt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKontakt.Name = "txtKontakt";
-            this.txtKontakt.Size = new System.Drawing.Size(154, 20);
+            this.txtKontakt.Size = new System.Drawing.Size(204, 22);
             this.txtKontakt.TabIndex = 128;
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label.Location = new System.Drawing.Point(45, 129);
-            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label.Location = new System.Drawing.Point(60, 159);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(66, 18);
+            this.label.Size = new System.Drawing.Size(84, 24);
             this.label.TabIndex = 127;
             this.label.Text = "Prezime:";
             // 
             // txtPrezime
             // 
-            this.txtPrezime.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtPrezime.Location = new System.Drawing.Point(160, 127);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtPrezime.Location = new System.Drawing.Point(213, 156);
+            this.txtPrezime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(154, 20);
+            this.txtPrezime.Size = new System.Drawing.Size(204, 22);
             this.txtPrezime.TabIndex = 126;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(45, 95);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(60, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 18);
+            this.label2.Size = new System.Drawing.Size(46, 24);
             this.label2.TabIndex = 125;
             this.label2.Text = "Ime:";
             // 
             // txtIme
             // 
-            this.txtIme.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtIme.Location = new System.Drawing.Point(160, 93);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtIme.Location = new System.Drawing.Point(213, 114);
+            this.txtIme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(154, 20);
+            this.txtIme.Size = new System.Drawing.Size(204, 22);
             this.txtIme.TabIndex = 124;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(45, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(60, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 18);
+            this.label1.Size = new System.Drawing.Size(46, 24);
             this.label1.TabIndex = 123;
             this.label1.Text = "OIB:";
             // 
             // txtOIB
             // 
-            this.txtOIB.Font = new System.Drawing.Font("Roboto", 7.8F);
-            this.txtOIB.Location = new System.Drawing.Point(160, 58);
-            this.txtOIB.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOIB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.txtOIB.Location = new System.Drawing.Point(213, 71);
+            this.txtOIB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOIB.Name = "txtOIB";
-            this.txtOIB.Size = new System.Drawing.Size(154, 20);
+            this.txtOIB.Size = new System.Drawing.Size(204, 22);
             this.txtOIB.TabIndex = 122;
             // 
             // btnOdustani
@@ -225,11 +216,11 @@
             this.btnOdustani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
             this.btnOdustani.FlatAppearance.BorderSize = 0;
             this.btnOdustani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOdustani.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnOdustani.Location = new System.Drawing.Point(48, 400);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnOdustani.Location = new System.Drawing.Point(64, 492);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(264, 32);
+            this.btnOdustani.Size = new System.Drawing.Size(352, 39);
             this.btnOdustani.TabIndex = 121;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
@@ -240,11 +231,11 @@
             this.btnRegistriraj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnRegistriraj.FlatAppearance.BorderSize = 0;
             this.btnRegistriraj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistriraj.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnRegistriraj.Location = new System.Drawing.Point(48, 348);
-            this.btnRegistriraj.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistriraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnRegistriraj.Location = new System.Drawing.Point(64, 428);
+            this.btnRegistriraj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistriraj.Name = "btnRegistriraj";
-            this.btnRegistriraj.Size = new System.Drawing.Size(264, 32);
+            this.btnRegistriraj.Size = new System.Drawing.Size(352, 39);
             this.btnRegistriraj.TabIndex = 120;
             this.btnRegistriraj.Text = "Registriraj";
             this.btnRegistriraj.UseVisualStyleBackColor = false;
@@ -253,17 +244,17 @@
             // cmbUloga
             // 
             this.cmbUloga.FormattingEnabled = true;
-            this.cmbUloga.Location = new System.Drawing.Point(159, 293);
-            this.cmbUloga.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbUloga.Location = new System.Drawing.Point(212, 361);
+            this.cmbUloga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUloga.Name = "cmbUloga";
-            this.cmbUloga.Size = new System.Drawing.Size(154, 21);
+            this.cmbUloga.Size = new System.Drawing.Size(204, 24);
             this.cmbUloga.TabIndex = 141;
             // 
             // RegistracijaZaposlenika
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 478);
+            this.ClientSize = new System.Drawing.Size(477, 588);
             this.Controls.Add(this.cmbUloga);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
@@ -284,10 +275,11 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnRegistriraj);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistracijaZaposlenika";
             this.Text = "Registracija zaposlenika";
             this.Load += new System.EventHandler(this.RegistracijaZaposlenika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RegistracijaZaposlenika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

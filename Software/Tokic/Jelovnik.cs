@@ -1,4 +1,5 @@
-﻿using Renci.SshNet.Common;
+﻿using Lib;
+using Renci.SshNet.Common;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -105,7 +106,7 @@ namespace Vedrana
                 context.SaveChanges();
             }
         }
-        public static Tuple<List<jelo>,List<jelo>> DanasnjiJelovnik()
+        public static Tuple<List<jelo>, List<jelo>> DanasnjiJelovnik()
         {
             using (var context = new Entities())
             {
@@ -129,7 +130,7 @@ namespace Vedrana
                                  select se.jelo;
                     return Tuple.Create(queryN.ToList(),queryP.ToList());
                 }
-                return null;
+                throw new Exception("Ne postoji današnji jelovnik!");
             }
         }
 

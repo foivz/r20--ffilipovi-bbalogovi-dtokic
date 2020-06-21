@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +19,7 @@ namespace Vedrana.Tokic
         {
             InitializeComponent();
             _jelovnik = jel;
+            this.KeyPreview = true;
         }
 
         private void UredjivanjeJelovnika_Load(object sender, EventArgs e)
@@ -110,11 +113,20 @@ namespace Vedrana.Tokic
                     jelo v = jelo.PretraziJelaPoImenu(cbxVecera.SelectedItem.ToString()).First();
 
                     _jelovnik.UrediJelovnik(d, r, u, v);
+                    Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void UredjivanjeJelovnika_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
             }
         }
     }

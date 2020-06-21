@@ -39,11 +39,11 @@
             this.btnZatvori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
             this.btnZatvori.FlatAppearance.BorderSize = 0;
             this.btnZatvori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZatvori.Font = new System.Drawing.Font("Roboto", 9F);
-            this.btnZatvori.Location = new System.Drawing.Point(29, 345);
-            this.btnZatvori.Margin = new System.Windows.Forms.Padding(2);
+            this.btnZatvori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnZatvori.Location = new System.Drawing.Point(39, 425);
+            this.btnZatvori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnZatvori.Name = "btnZatvori";
-            this.btnZatvori.Size = new System.Drawing.Size(214, 32);
+            this.btnZatvori.Size = new System.Drawing.Size(285, 39);
             this.btnZatvori.TabIndex = 70;
             this.btnZatvori.Text = "Zatvori";
             this.btnZatvori.UseVisualStyleBackColor = false;
@@ -52,11 +52,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 11.8F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(26, 28);
+            this.label4.Location = new System.Drawing.Point(35, 34);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 19);
+            this.label4.Size = new System.Drawing.Size(231, 25);
             this.label4.TabIndex = 69;
             this.label4.Text = "Popis narudžbi proizvoda";
             // 
@@ -65,27 +66,28 @@
             this.dgvNarudzbe.AllowUserToAddRows = false;
             this.dgvNarudzbe.AllowUserToDeleteRows = false;
             this.dgvNarudzbe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNarudzbe.Location = new System.Drawing.Point(29, 60);
-            this.dgvNarudzbe.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvNarudzbe.Location = new System.Drawing.Point(39, 74);
+            this.dgvNarudzbe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNarudzbe.Name = "dgvNarudzbe";
             this.dgvNarudzbe.RowHeadersWidth = 51;
             this.dgvNarudzbe.RowTemplate.Height = 24;
-            this.dgvNarudzbe.Size = new System.Drawing.Size(746, 260);
+            this.dgvNarudzbe.Size = new System.Drawing.Size(995, 320);
             this.dgvNarudzbe.TabIndex = 68;
             // 
             // PopisNarudzbi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 554);
+            this.ClientSize = new System.Drawing.Size(1083, 682);
             this.Controls.Add(this.btnZatvori);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvNarudzbe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PopisNarudzbi";
             this.Text = "Popis narudžbi";
             this.Load += new System.EventHandler(this.PopisNarudzbi_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PopisNarudzbi_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vedrana
+namespace Vedrana.Tokic
 {
-    public partial class Skladiste : proizvod
+    public class Skladiste
     {
-        public static IEnumerable<object> DohvatiPopisSastojaka(string tip="")
+        public static IEnumerable<object> DohvatiPopisSastojaka(string tip = "")
         {
             using (var context = new Entities())
             {
@@ -22,18 +22,6 @@ namespace Vedrana
                             };
                 return lista.ToList();
             }
-        }
-        public void NaruciSastojke (List<proizvod> popisProizvoda)
-        {
-            throw new NotImplementedException();
-        }
-        private void NaruciProizvode ()
-        {
-            throw new NotImplementedException();
-        }
-        public void IskoristenProizvod ()
-        {
-            throw new NotImplementedException();
         }
         public static IEnumerable<object> PopisNarucenihStvari()
         {

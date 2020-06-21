@@ -69,6 +69,24 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
@@ -201,8 +219,23 @@
       <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
     </Compile>
     <Compile Include="Balogovic\Usluga.cs" />
+    <Compile Include="EtarackiDomVedranaDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtarackiDomVedranaDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EtarackiDomVedranaDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EtarackiDomVedranaDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtarackiDomVedranaDB.edmx</DependentUpon>
+    </Compile>
     <Compile Include="evidencijaNjege.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Filipovic\EvidencijaZaposlenika.cs">
       <SubType>Form</SubType>
@@ -243,25 +276,25 @@
       <DependentUpon>GlavniMeni.cs</DependentUpon>
     </Compile>
     <Compile Include="imaUslugu.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="jelo.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="jelovnik.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="korisnik.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="koristiProizvod.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="narudzba.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="osoba.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Pocetna.cs">
       <SubType>Form</SubType>
@@ -271,35 +304,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="proizvod.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="seNalazi.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="seNarucuje.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="seSastoji.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="soba.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="StarackiDomVedranaDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StarackiDomVedranaDB.Context.tt</DependentUpon>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Statistika\Statistika.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StarackiDomVedranaDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StarackiDomVedranaDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StarackiDomVedranaDB.edmx</DependentUpon>
+    <Compile Include="Statistika\Statistika.Designer.cs">
+      <DependentUpon>Statistika.cs</DependentUpon>
     </Compile>
     <Compile Include="Tokic\EvidencijaJela.cs">
       <SubType>Form</SubType>
@@ -353,11 +378,17 @@
     <Compile Include="Tokic\UredjivanjeJelovnika.Designer.cs">
       <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ugovor\Ugovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugovor\Ugovor.Designer.cs">
+      <DependentUpon>Ugovor.cs</DependentUpon>
+    </Compile>
     <Compile Include="usluga.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="zaposlenik.cs">
-      <DependentUpon>StarackiDomVedranaDB.tt</DependentUpon>
+      <DependentUpon>EtarackiDomVedranaDB.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Balogovic\EvidencijaKorisnika.resx">
       <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
@@ -413,6 +444,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Statistika\Statistika.resx">
+      <DependentUpon>Statistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistika\StatistikaReport.rdlc" />
     <EmbeddedResource Include="Tokic\EvidencijaJela.resx">
       <DependentUpon>EvidencijaJela.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +472,17 @@
     <EmbeddedResource Include="Tokic\UredjivanjeJelovnika.resx">
       <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ugovor\Ugovor.resx">
+      <DependentUpon>Ugovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugovor\UgovorReport.rdlc" />
+    <EntityDeploy Include="EtarackiDomVedranaDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EtarackiDomVedranaDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EtarackiDomVedranaDB.edmx.diagram">
+      <DependentUpon>EtarackiDomVedranaDB.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -447,28 +493,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="StarackiDomVedranaDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StarackiDomVedranaDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="StarackiDomVedranaDB.edmx.diagram">
-      <DependentUpon>StarackiDomVedranaDB.edmx</DependentUpon>
-    </None>
+    <None Include="StarackiDomVedranaHelp.chm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="StarackiDomVedranaDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StarackiDomVedranaDB.edmx</DependentUpon>
-      <LastGenOutput>StarackiDomVedranaDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="StarackiDomVedranaDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StarackiDomVedranaDB.edmx</DependentUpon>
-      <LastGenOutput>StarackiDomVedranaDB.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '16.0'">
     <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -486,6 +514,37 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EtarackiDomVedranaDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EtarackiDomVedranaDB.edmx</DependentUpon>
+      <LastGenOutput>EtarackiDomVedranaDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EtarackiDomVedranaDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EtarackiDomVedranaDB.edmx</DependentUpon>
+      <LastGenOutput>EtarackiDomVedranaDB.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Lib\Lib.csproj">
+      <Project>{39fe66d3-e7ec-4d3c-9424-6bede972e953}</Project>
+      <Name>Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

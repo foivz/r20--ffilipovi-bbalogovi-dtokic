@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
+using Lib;
 
 namespace Vedrana
 {
@@ -54,7 +55,7 @@ namespace Vedrana
 
             lozinka = finalString;
 
-            PosaljiMail(nemail, "Registracija", $"Pozdrav {ime}!\n" +
+            SlanjeMaila.PosaljiMail(nemail, "Registracija", $"Pozdrav {ime}!\n" +
                 $"Administrator vas je uspješno registrirao te od sada možete koristiti aplikaciju Dom \"Vedrana\".\n" +
                 $"Vaši podaci za prijavu glase:\n" +
                 $"E-mail: {nemail}\n" +
@@ -111,7 +112,7 @@ namespace Vedrana
                 {
                     user.First<zaposlenik>().lozinka = finalString;
                     context.SaveChanges();
-                    PosaljiMail(email, "Zaboravljena lozinka", $"Zatražili ste resetiranje lozinke.\nVaša nova lozinka je: {finalString}");
+                    SlanjeMaila.PosaljiMail(email, "Zaboravljena lozinka", $"Zatražili ste resetiranje lozinke.\nVaša nova lozinka je: {finalString}");
                 }
                 else
                     throw new Exception("Pogrešno upisani podaci. Molimo pokušajte opet.");
@@ -145,20 +146,6 @@ namespace Vedrana
         public void OtpustiZaposlenika (zaposlenik zaposlenik)
         {
             zaposlenik.osoba.datumZavrsetka = DateTime.Now;
-        }
-
-        private static void PosaljiMail (string email, string header, string content)
-        {
-            SmtpClient klijent = new SmtpClient("smtp.gmail.com", 25);
-            NetworkCredential podaci = new NetworkCredential("pi.projekt.031@gmail.com", "foiPI1234");
-            MailMessage poruka = new MailMessage();
-            poruka.From = new MailAddress("pi.projekt.031@gmail.com");
-            poruka.To.Add(email);
-            poruka.Subject = header;
-            poruka.Body = content;
-            klijent.Credentials = podaci;
-            klijent.EnableSsl = true;
-            klijent.Send(poruka);
         }
     }
 }

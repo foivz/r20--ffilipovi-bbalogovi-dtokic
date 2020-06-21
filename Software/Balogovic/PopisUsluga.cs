@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +18,7 @@ namespace Vedrana.Balogovic
         public PopisUsluga()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void PopisUsluga_Load(object sender, EventArgs e)
@@ -69,6 +72,14 @@ namespace Vedrana.Balogovic
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void PopisUsluga_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
             }
         }
     }

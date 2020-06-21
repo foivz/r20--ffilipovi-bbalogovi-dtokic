@@ -40,23 +40,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.label1.Location = new System.Drawing.Point(9, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 18);
+            this.label1.Size = new System.Drawing.Size(220, 18);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Resetiranje zabranjene lozinke";
+            this.label1.Text = "Resetiranje zaboravljene lozinke";
             // 
             // btnOdustani
             // 
             this.btnOdustani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
             this.btnOdustani.FlatAppearance.BorderSize = 0;
             this.btnOdustani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOdustani.Font = new System.Drawing.Font("Roboto", 9F);
+            this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnOdustani.Location = new System.Drawing.Point(39, 168);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(227, 32);
             this.btnOdustani.TabIndex = 27;
@@ -67,24 +67,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.label3.Location = new System.Drawing.Point(35, 89);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 18);
+            this.label3.Size = new System.Drawing.Size(49, 18);
             this.label3.TabIndex = 26;
             this.label3.Text = "Email:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 10.8F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.label4.Location = new System.Drawing.Point(35, 53);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 18);
+            this.label4.Size = new System.Drawing.Size(37, 18);
             this.label4.TabIndex = 25;
             this.label4.Text = "OIB:";
             // 
@@ -93,9 +93,9 @@
             this.btnNovaLozinka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(219)))), ((int)(((byte)(155)))));
             this.btnNovaLozinka.FlatAppearance.BorderSize = 0;
             this.btnNovaLozinka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovaLozinka.Font = new System.Drawing.Font("Roboto", 9F);
+            this.btnNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnNovaLozinka.Location = new System.Drawing.Point(39, 128);
-            this.btnNovaLozinka.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNovaLozinka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNovaLozinka.Name = "btnNovaLozinka";
             this.btnNovaLozinka.Size = new System.Drawing.Size(227, 32);
             this.btnNovaLozinka.TabIndex = 24;
@@ -105,20 +105,20 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Roboto", 7.8F);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtEmail.Location = new System.Drawing.Point(112, 87);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(155, 20);
+            this.txtEmail.Size = new System.Drawing.Size(155, 19);
             this.txtEmail.TabIndex = 23;
             // 
             // txtOIB
             // 
-            this.txtOIB.Font = new System.Drawing.Font("Roboto", 7.8F);
+            this.txtOIB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtOIB.Location = new System.Drawing.Point(112, 51);
-            this.txtOIB.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOIB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOIB.Name = "txtOIB";
-            this.txtOIB.Size = new System.Drawing.Size(155, 20);
+            this.txtOIB.Size = new System.Drawing.Size(155, 19);
             this.txtOIB.TabIndex = 22;
             // 
             // ZaboravljenaLozinka
@@ -134,10 +134,11 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtOIB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ZaboravljenaLozinka";
             this.Text = "Zaboravljena lozinka";
             this.Load += new System.EventHandler(this.ZaboravljenaLozinka_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ZaboravljenaLozinka_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

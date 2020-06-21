@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,7 @@ namespace Vedrana.Tokic
         public EvidencijaJelovnika()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void EvidencijaJelovnika_Load(object sender, EventArgs e)
@@ -103,7 +106,7 @@ namespace Vedrana.Tokic
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                // MessageBox.Show(ex.Message);
             }
         }
 
@@ -116,23 +119,41 @@ namespace Vedrana.Tokic
 
         private void btnUrediJelovnik_Click(object sender, EventArgs e)
         {
-            using (var context = new Entities())
+            try
             {
-                var datum = DateTime.Parse(dgvJelovnici.CurrentRow.Cells[4].Value.ToString());
-                var poseban = dgvJelovnici.CurrentRow.Cells[5].Value.ToString();
-                bool p = false;
-                if (poseban == "Da")
-                    p = true;
+                using (var context = new Entities())
+                {
+                    if (dgvJelovnici.CurrentRow != null)
+                    {
+                        var datum = DateTime.Parse(dgvJelovnici.CurrentRow.Cells[4].Value.ToString());
+                        var poseban = dgvJelovnici.CurrentRow.Cells[5].Value.ToString();
+                        bool p = false;
+                        if (poseban == "Da")
+                            p = true;
 
-                var jelovnik = (from j in context.jelovniks.AsEnumerable()
-                                where j.datum.Value.Date == datum.Date
-                                && j.posebanJelovnik == Convert.ToByte(p)
-                                select j).First();
-                Console.WriteLine(p);
-                Console.WriteLine(datum.Date);
-                UredjivanjeJelovnika forma = new UredjivanjeJelovnika(jelovnik);
-                forma.ShowDialog();
-                OsvjeziPodatke();
+                        var jelovnik = (from j in context.jelovniks.AsEnumerable()
+                                        where j.datum.Value.Date == datum.Date
+                                        && j.posebanJelovnik == Convert.ToByte(p)
+                                        select j).First();
+                        Console.WriteLine(p);
+                        Console.WriteLine(datum.Date);
+                        UredjivanjeJelovnika forma = new UredjivanjeJelovnika(jelovnik);
+                        forma.ShowDialog();
+                        OsvjeziPodatke();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void EvidencijaJelovnika_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
             }
         }
     }

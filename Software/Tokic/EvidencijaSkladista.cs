@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +19,7 @@ namespace Vedrana.Tokic
         public EvidencijaSkladista()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void EvidencijaSkladista_Load(object sender, EventArgs e)
@@ -26,15 +29,11 @@ namespace Vedrana.Tokic
 
         private void OsvjeziPodatke()
         {
-            try
-            {
+           
                 dgvSkladiste.DataSource = null;
                 dgvSkladiste.DataSource = Skladiste.DohvatiPopisSastojaka();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
+
         }
 
         private void btnNoviProizvod_Click(object sender, EventArgs e)
@@ -48,6 +47,20 @@ namespace Vedrana.Tokic
         {
             PopisNarudzbi forma = new PopisNarudzbi();
             forma.ShowDialog();
+        }
+
+        private void EvidencijaSkladista_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
+            }
+        }
+
+        private void statistikaBtn_Click(object sender, EventArgs e)
+        {
+            Statistika.Statistika report = new Statistika.Statistika();
+            report.ShowDialog();
         }
     }
 }

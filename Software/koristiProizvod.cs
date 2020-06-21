@@ -19,7 +19,7 @@ namespace Vedrana
         public Nullable<double> kolicina { get; set; }
         public int koristiProizvodID { get; set; }
     
-        public virtual proizvod proizvod { get; set; }
         public virtual usluga usluga { get; set; }
+        public virtual proizvod proizvod { get; set; }
     }
 }
