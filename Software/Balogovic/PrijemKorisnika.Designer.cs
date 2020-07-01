@@ -288,6 +288,7 @@
             this.btnUkloniUslugu.TabIndex = 135;
             this.btnUkloniUslugu.Text = "Ukloni uslugu";
             this.btnUkloniUslugu.UseVisualStyleBackColor = false;
+            this.btnUkloniUslugu.Click += new System.EventHandler(this.btnUkloniUslugu_Click);
             // 
             // btnDodajUslugu
             // 
@@ -302,6 +303,7 @@
             this.btnDodajUslugu.TabIndex = 134;
             this.btnDodajUslugu.Text = "Dodaj uslugu";
             this.btnDodajUslugu.UseVisualStyleBackColor = false;
+            this.btnDodajUslugu.Click += new System.EventHandler(this.btnDodajUslugu_Click);
             // 
             // label10
             // 

@@ -12,6 +12,8 @@ namespace Vedrana.Balogovic
 {
     public partial class PrijemKorisnika : Form
     {
+        List<imaUslugu> popisUsluga = new List<imaUslugu>();
+        List<string> popisUslugaTablica = new List<string>();
         List<usluga> sveUsluge = usluga.PronadjiUsluguPoImenu();
         public PrijemKorisnika()
         {
@@ -31,6 +33,70 @@ namespace Vedrana.Balogovic
                 {
                     cbxUsluge.Items.Add(usluga.naziv);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDodajUslugu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                imaUslugu u = new imaUslugu();
+                foreach (var usluga in sveUsluge)
+                {
+                    if (cbxUsluge.SelectedItem.ToString() == usluga.naziv)
+                    {
+                        u.uslugaId = usluga.uslugaId;
+                    }
+                }
+
+                popisUslugaTablica.Add(cbxUsluge.SelectedItem.ToString());
+                dgvPopisUsluga.DataSource = null;
+                var result = popisUslugaTablica.Select(s => new { Usluga = s }).ToList();
+                dgvPopisUsluga.DataSource = result;
+
+                popisUsluga.Add(u);
+                int i = cbxUsluge.SelectedIndex;
+                cbxUsluge.Items.RemoveAt(i);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnUkloniUslugu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string odabrano = dgvPopisUsluga.CurrentRow.Cells[0].Value.ToString();
+
+                cbxUsluge.Items.Add(odabrano);
+
+                int id = -1;
+                foreach (var item in sveUsluge)
+                {
+                    if (item.naziv == odabrano)
+                    {
+                        id = item.uslugaId;
+                    }
+                }
+                foreach (var item in popisUsluga.ToList())
+                {
+                    if (item.uslugaId == id)
+                    {
+                        popisUsluga.Remove(item);
+                    }
+                }
+
+                popisUslugaTablica.Remove(odabrano);
+
+                dgvPopisUsluga.DataSource = null;
+                var result = popisUslugaTablica.Select(s => new { Usluga = s }).ToList();
+                dgvPopisUsluga.DataSource = result;
             }
             catch (Exception ex)
             {
