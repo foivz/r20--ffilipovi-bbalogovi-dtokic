@@ -129,6 +129,7 @@
             this.btnEvidentirajNjegu.TabIndex = 51;
             this.btnEvidentirajNjegu.Text = "Evidentiraj njegu";
             this.btnEvidentirajNjegu.UseVisualStyleBackColor = false;
+            this.btnEvidentirajNjegu.Click += new System.EventHandler(this.btnEvidentirajNjegu_Click);
             // 
             // btnUrediKorisnika
             // 
@@ -158,6 +159,7 @@
             this.btnMakniFiltere.TabIndex = 49;
             this.btnMakniFiltere.Text = "Makni filtere";
             this.btnMakniFiltere.UseVisualStyleBackColor = false;
+            this.btnMakniFiltere.Click += new System.EventHandler(this.btnMakniFiltere_Click);
             // 
             // btnFiltriraj
             // 
@@ -172,6 +174,7 @@
             this.btnFiltriraj.TabIndex = 48;
             this.btnFiltriraj.Text = "Filtriraj";
             this.btnFiltriraj.UseVisualStyleBackColor = false;
+            this.btnFiltriraj.Click += new System.EventHandler(this.btnFiltriraj_Click);
             // 
             // txtPrezime
             // 

@@ -81,5 +81,42 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnEvidentirajNjegu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMakniFiltere_Click(object sender, EventArgs e)
+        {
+            OsvjeziPopis();
+            txtPrezime.Text = "";
+            txtIme.Text = "";
+        }
+
+        private void btnFiltriraj_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbxFilter.Checked)
+                {
+                    btnUkloni.Enabled = false;
+                    btnUrediKorisnika.Enabled = false;
+                    btnEvidentirajNjegu.Enabled = false;
+                }
+                else
+                {
+                    btnUkloni.Enabled = true;
+                    btnUrediKorisnika.Enabled = true;
+                    btnEvidentirajNjegu.Enabled = true;
+                }
+                dgvKorisnici.DataSource = null;
+                dgvKorisnici.DataSource = korisnik.PretragaKorisnika(cbxFilter.Checked, txtIme.Text, txtPrezime.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
