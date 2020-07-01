@@ -139,6 +139,12 @@
     <Compile Include="Tokic\EvidencijaJela.Designer.cs">
       <DependentUpon>EvidencijaJela.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tokic\EvidencijaJelovnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tokic\EvidencijaJelovnika.Designer.cs">
+      <DependentUpon>EvidencijaJelovnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tokic\Jelo.cs" />
     <Compile Include="Tokic\Jelovnik.cs" />
     <Compile Include="Tokic\Proizvod.cs" />
@@ -169,6 +175,9 @@
     </Compile>
     <EmbeddedResource Include="Tokic\EvidencijaJela.resx">
       <DependentUpon>EvidencijaJela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tokic\EvidencijaJelovnika.resx">
+      <DependentUpon>EvidencijaJelovnika.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
