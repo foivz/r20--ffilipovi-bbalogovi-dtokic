@@ -90,6 +90,12 @@
     <Compile Include="Balogovic\UrediUslugu.Designer.cs">
       <DependentUpon>UrediUslugu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Balogovic\UredjivanjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\UredjivanjeKorisnika.Designer.cs">
+      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\Usluga.cs" />
     <Compile Include="Baza.Context.cs">
       <AutoGen>True</AutoGen>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Balogovic\UrediUslugu.resx">
       <DependentUpon>UrediUslugu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\UredjivanjeKorisnika.resx">
+      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
