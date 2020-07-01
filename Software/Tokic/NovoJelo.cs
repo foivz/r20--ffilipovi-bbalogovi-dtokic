@@ -41,5 +41,27 @@ namespace Vedrana.Tokic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnDodajSastojak_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtKolicina.Text == "")
+                {
+                    MessageBox.Show("Unesi količinu!");
+                }
+                else
+                {
+                    DataRow row = dt.NewRow();
+                    row["Naziv"] = cbxSastojak.SelectedItem.ToString();
+                    row["Količina"] = double.Parse(txtKolicina.Text);
+                    dt.Rows.Add(row);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

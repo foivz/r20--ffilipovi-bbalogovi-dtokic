@@ -66,6 +66,7 @@
             this.btnDodajSastojak.TabIndex = 24;
             this.btnDodajSastojak.Text = "Dodaj sastojak";
             this.btnDodajSastojak.UseVisualStyleBackColor = false;
+            this.btnDodajSastojak.Click += new System.EventHandler(this.btnDodajSastojak_Click);
             // 
             // txtKolicina
             // 
