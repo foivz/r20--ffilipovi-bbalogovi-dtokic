@@ -201,6 +201,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NovoJelo";
             this.Text = "NovoJelo";
+            this.Load += new System.EventHandler(this.NovoJelo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSastojci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
