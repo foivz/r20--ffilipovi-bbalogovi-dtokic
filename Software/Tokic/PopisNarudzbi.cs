@@ -16,5 +16,22 @@ namespace Vedrana.Tokic
         {
             InitializeComponent();
         }
+
+        private void PopisNarudzbi_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvNarudzbe.DataSource = Skladiste.PopisNarucenihStvari();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnZatvori_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
