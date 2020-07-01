@@ -159,6 +159,12 @@
     </Compile>
     <Compile Include="Tokic\Jelo.cs" />
     <Compile Include="Tokic\Jelovnik.cs" />
+    <Compile Include="Tokic\NoviProizvod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tokic\NoviProizvod.Designer.cs">
+      <DependentUpon>NoviProizvod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tokic\NovoJelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\IzradaJelovnika.resx">
       <DependentUpon>IzradaJelovnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tokic\NoviProizvod.resx">
+      <DependentUpon>NoviProizvod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\NovoJelo.resx">
       <DependentUpon>NovoJelo.cs</DependentUpon>
