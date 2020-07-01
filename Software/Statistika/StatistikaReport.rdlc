@@ -436,8 +436,8 @@
             <DataSetName>DataSet</DataSetName>
             <Top>0.49424cm</Top>
             <Left>0.47836cm</Left>
-            <Height>7.69875cm</Height>
-            <Width>15.59625cm</Width>
+            <Height>7.31775cm</Height>
+            <Width>14.30508cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -448,10 +448,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.4485in</Height>
+        <Height>4.2485in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>7.55833in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
