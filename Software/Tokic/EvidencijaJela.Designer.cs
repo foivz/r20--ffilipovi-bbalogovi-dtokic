@@ -79,6 +79,7 @@
             this.btnFiltrirajIme.TabIndex = 25;
             this.btnFiltrirajIme.Text = "Filtriraj po imenu";
             this.btnFiltrirajIme.UseVisualStyleBackColor = false;
+            this.btnFiltrirajIme.Click += new System.EventHandler(this.btnFiltrirajIme_Click);
             // 
             // btnFiltrirajTip
             // 
@@ -93,6 +94,7 @@
             this.btnFiltrirajTip.TabIndex = 24;
             this.btnFiltrirajTip.Text = "Filtriraj po tipu";
             this.btnFiltrirajTip.UseVisualStyleBackColor = false;
+            this.btnFiltrirajTip.Click += new System.EventHandler(this.btnFiltrirajTip_Click);
             // 
             // txtImeJela
             // 

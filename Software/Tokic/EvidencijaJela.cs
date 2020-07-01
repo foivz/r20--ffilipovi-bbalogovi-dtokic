@@ -42,5 +42,41 @@ namespace Vedrana.Tokic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnFiltrirajTip_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvJela.DataSource = null;
+                dgvJela.DataSource = jelo.PopisJelaPoTipu(cbxTipJela.SelectedItem.ToString());
+                dgvJela.Columns[0].Visible = false;
+                for (int i = 3; i < dgvJela.ColumnCount; i++)
+                {
+                    dgvJela.Columns[i].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnFiltrirajIme_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvJela.DataSource = null;
+                dgvJela.DataSource = jelo.PretraziJelaPoImenu(txtImeJela.Text);
+                dgvJela.Columns[0].Visible = false;
+                for (int i = 3; i < dgvJela.ColumnCount; i++)
+                {
+                    dgvJela.Columns[i].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
