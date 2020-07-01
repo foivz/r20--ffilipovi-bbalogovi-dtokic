@@ -188,6 +188,7 @@
             this.btnOdustani.TabIndex = 127;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // bntUnesi
             // 
@@ -202,6 +203,7 @@
             this.bntUnesi.TabIndex = 126;
             this.bntUnesi.Text = "Unesi evidencije";
             this.bntUnesi.UseVisualStyleBackColor = false;
+            this.bntUnesi.Click += new System.EventHandler(this.bntUnesi_Click);
             // 
             // dtpDatumRodjenja
             // 

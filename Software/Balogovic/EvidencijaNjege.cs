@@ -100,5 +100,35 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void bntUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new Entities())
+                {
+                    for (int i = 0; i < popisUsluga.Count(); i++)
+                    {
+                        evidencijaNjege ev = new evidencijaNjege(
+                            popisUsluga[i],
+                            _korisnik,
+                            _zaposlenik,
+                            popisNapomenaZaEvidentirat[i]);
+                        context.evidencijaNjeges.Add(ev);
+                        context.SaveChanges();
+                    }
+                }
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
