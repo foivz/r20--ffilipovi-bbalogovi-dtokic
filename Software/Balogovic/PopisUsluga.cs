@@ -38,5 +38,22 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnNovaUsluga_Click(object sender, EventArgs e)
+        {
+            NovaUsluga forma = new NovaUsluga();
+            forma.ShowDialog();
+            OsvjeziPopis();
+        }
+
+        private void btnUrediUslugu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnObrisiUslugu_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
