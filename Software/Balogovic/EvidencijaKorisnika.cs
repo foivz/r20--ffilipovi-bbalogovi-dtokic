@@ -48,5 +48,38 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnNoviKorisnik_Click(object sender, EventArgs e)
+        {
+            PrijemKorisnika forma = new PrijemKorisnika();
+            forma.ShowDialog();
+            OsvjeziPopis();
+        }
+
+        private void btnUrediKorisnika_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUkloni_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string oib = dgvKorisnici.CurrentRow.Cells[0].Value.ToString();
+                using (var context = new Entities())
+                {
+                    korisnik ukloni = (from k in context.korisniks
+                                       where k.oib == oib
+                                       select k).First<korisnik>();
+                    ukloni.MakniKorisnika(ukloni);
+                    context.SaveChanges();
+                }
+                OsvjeziPopis();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

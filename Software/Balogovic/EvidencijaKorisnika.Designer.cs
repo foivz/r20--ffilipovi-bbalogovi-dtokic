@@ -143,6 +143,7 @@
             this.btnUrediKorisnika.TabIndex = 50;
             this.btnUrediKorisnika.Text = "Uredi korisnika";
             this.btnUrediKorisnika.UseVisualStyleBackColor = false;
+            this.btnUrediKorisnika.Click += new System.EventHandler(this.btnUrediKorisnika_Click);
             // 
             // btnMakniFiltere
             // 
@@ -204,6 +205,7 @@
             this.btnUkloni.TabIndex = 45;
             this.btnUkloni.Text = "Ukloni korisnika";
             this.btnUkloni.UseVisualStyleBackColor = false;
+            this.btnUkloni.Click += new System.EventHandler(this.btnUkloni_Click);
             // 
             // cbxFilter
             // 
@@ -233,6 +235,7 @@
             this.btnNoviKorisnik.TabIndex = 43;
             this.btnNoviKorisnik.Text = "Novi korisnik";
             this.btnNoviKorisnik.UseVisualStyleBackColor = false;
+            this.btnNoviKorisnik.Click += new System.EventHandler(this.btnNoviKorisnik_Click);
             // 
             // dgvKorisnici
             // 
