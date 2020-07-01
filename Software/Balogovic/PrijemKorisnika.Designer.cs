@@ -382,6 +382,7 @@
             this.Controls.Add(this.bntUnesi);
             this.Name = "PrijemKorisnika";
             this.Text = "PrijemKorisnika";
+            this.Load += new System.EventHandler(this.PrijemKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPopisUsluga)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

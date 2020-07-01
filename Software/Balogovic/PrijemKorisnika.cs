@@ -12,9 +12,30 @@ namespace Vedrana.Balogovic
 {
     public partial class PrijemKorisnika : Form
     {
+        List<usluga> sveUsluge = usluga.PronadjiUsluguPoImenu();
         public PrijemKorisnika()
         {
             InitializeComponent();
+        }
+
+        private void PrijemKorisnika_Load(object sender, EventArgs e)
+        {
+            OsvjeziPopis();
+        }
+        private void OsvjeziPopis()
+        {
+            try
+            {
+                cbxUsluge.Items.Clear();
+                foreach (var usluga in sveUsluge)
+                {
+                    cbxUsluge.Items.Add(usluga.naziv);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
