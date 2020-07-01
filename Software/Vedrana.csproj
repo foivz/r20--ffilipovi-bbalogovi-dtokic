@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Balogovic\EvidencijaKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\EvidencijaKorisnika.Designer.cs">
+      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\EvidencijaUsluge.cs" />
     <Compile Include="Balogovic\Korisnik.cs" />
     <Compile Include="Balogovic\NovaUsluga.cs">
@@ -212,6 +218,9 @@
     <Compile Include="zaposlenik.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Balogovic\EvidencijaKorisnika.resx">
+      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Balogovic\NovaUsluga.resx">
       <DependentUpon>NovaUsluga.cs</DependentUpon>
     </EmbeddedResource>
