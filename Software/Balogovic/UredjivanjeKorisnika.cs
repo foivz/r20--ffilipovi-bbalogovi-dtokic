@@ -13,6 +13,9 @@ namespace Vedrana.Balogovic
     public partial class UredjivanjeKorisnika : Form
     {
         korisnik trenutniKornisnik = null;
+        List<imaUslugu> popisUsluga = new List<imaUslugu>();
+        List<string> popisUslugaTablica = new List<string>();
+        List<usluga> sveUsluge = usluga.PronadjiUsluguPoImenu();
         public UredjivanjeKorisnika(korisnik kor)
         {
             InitializeComponent();
@@ -21,15 +24,51 @@ namespace Vedrana.Balogovic
 
         private void UredjivanjeKorisnika_Load(object sender, EventArgs e)
         {
-            txtAdresa.Text = trenutniKornisnik.osoba.adresa;
-            txtAlergije.Text = trenutniKornisnik.alergije;
-            txtIme.Text = trenutniKornisnik.osoba.ime;
-            txtKontakt.Text = trenutniKornisnik.osoba.kontakt;
-            txtNapomene.Text = trenutniKornisnik.napomene;
-            txtOIB.Text = trenutniKornisnik.oib;
-            txtPrezime.Text = trenutniKornisnik.osoba.prezime;
-            txtSoba.Text = trenutniKornisnik.brojSobe.ToString();
-            dtpDatumRodjenja.Value = trenutniKornisnik.osoba.datumRodjenja.GetValueOrDefault();
+            try
+            {
+                txtAdresa.Text = trenutniKornisnik.osoba.adresa;
+                txtAlergije.Text = trenutniKornisnik.alergije;
+                txtIme.Text = trenutniKornisnik.osoba.ime;
+                txtKontakt.Text = trenutniKornisnik.osoba.kontakt;
+                txtNapomene.Text = trenutniKornisnik.napomene;
+                txtOIB.Text = trenutniKornisnik.oib;
+                txtPrezime.Text = trenutniKornisnik.osoba.prezime;
+                txtSoba.Text = trenutniKornisnik.brojSobe.ToString();
+                dtpDatumRodjenja.Value = trenutniKornisnik.osoba.datumRodjenja.GetValueOrDefault();
+
+                foreach (var susl in sveUsluge)
+                {
+                    bool pronasao = false;
+                    foreach (var usl in trenutniKornisnik.imaUslugus)
+                    {
+                        if (susl.uslugaId == usl.uslugaId)
+                        {
+                            popisUslugaTablica.Add(susl.naziv);
+                            pronasao = true;
+                        }
+                    }
+                    if (!pronasao)
+                    {
+                        cbxUsluge.Items.Add(susl.naziv);
+                    }
+                }
+
+                dgvPopisUsluga.DataSource = null;
+                var result = popisUslugaTablica.Select(s => new { Usluga = s }).ToList();
+                dgvPopisUsluga.DataSource = result;
+
+                using (var context = new Entities())
+                {
+                    foreach (var item in trenutniKornisnik.imaUslugus)
+                    {
+                        popisUsluga.Add(item);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
