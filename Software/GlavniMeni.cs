@@ -81,7 +81,7 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
             aktivniMeniLbl.Text = "Početna stranica";
             // otvori početnu forma
-            // otvoriFormu();
+            otvoriFormu(new Pocetna());
         }
 
         private void zaposleniciBtn_Click(object sender, EventArgs e)

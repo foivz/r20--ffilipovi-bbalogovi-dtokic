@@ -15,3 +15,4 @@ C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\ob
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.pdb
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.GlavniMeni.resources
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Pocetna.resources
