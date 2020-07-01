@@ -80,6 +80,7 @@
             this.btnOdustani.TabIndex = 49;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // btnUnesi
             // 
@@ -94,6 +95,7 @@
             this.btnUnesi.TabIndex = 48;
             this.btnUnesi.Text = "Unesi";
             this.btnUnesi.UseVisualStyleBackColor = false;
+            this.btnUnesi.Click += new System.EventHandler(this.btnUnesi_Click);
             // 
             // dtpDatum
             // 
@@ -220,6 +222,7 @@
             this.Controls.Add(this.cbxDorucak);
             this.Name = "IzradaJelovnika";
             this.Text = "IzradaJelovnika";
+            this.Load += new System.EventHandler(this.IzradaJelovnika_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
