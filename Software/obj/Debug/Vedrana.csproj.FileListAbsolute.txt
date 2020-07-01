@@ -103,3 +103,11 @@ C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin
 C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.EvidencijaKorisnika.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.EvidencijaNjege.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.EvidentiraneNjege.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.NovaUsluga.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.PopisUsluga.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.PrijemKorisnika.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.UrediUslugu.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Balogovic.UredjivanjeKorisnika.resources
