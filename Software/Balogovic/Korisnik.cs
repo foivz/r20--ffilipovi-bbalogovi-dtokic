@@ -77,7 +77,23 @@ namespace Vedrana
         }
         public void PromjenaUslugaKorisnika(List<imaUslugu> popisUsluga)
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var stareUsluge = from iU in context.imaUslugus
+                                  where iU.oib == this.oib
+                                  select iU;
+                foreach (var sUsluga in stareUsluge)
+                {
+                    context.imaUslugus.Remove(sUsluga);
+                }
+                context.SaveChanges();
+
+                foreach (var nUsluga in popisUsluga)
+                {
+                    context.imaUslugus.Add(nUsluga);
+                }
+                context.SaveChanges();
+            }
         }
         public void MakniKorisnika(korisnik korisnik)
         {
