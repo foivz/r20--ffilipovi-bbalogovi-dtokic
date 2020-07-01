@@ -129,7 +129,25 @@ namespace Vedrana
         }
 		public static Tuple<List<List<jelo>>, List<DateTime>, List<bool>> SviJelovnici()
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                List<List<jelo>> lista = new List<List<jelo>>();
+                List<DateTime> datumi = new List<DateTime>();
+                List<bool> posebni = new List<bool>();
+                var svi = from j in context.jelovniks.AsEnumerable()
+                          where j.datum.Value.Date != DateTime.Now.Date
+                          select j;
+                foreach (var item in svi)
+                {
+                    var query = from se in context.seNalazis
+                                where se.jelovnikId == item.jelovnikId
+                                select se.jelo;
+                    lista.Add(query.ToList());
+                    datumi.Add(item.datum.Value.Date);
+                    posebni.Add(Convert.ToBoolean(item.posebanJelovnik));
+                }
+                return Tuple.Create(lista, datumi, posebni);
+            }
         }
 	}
 }
