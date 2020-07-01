@@ -64,6 +64,7 @@
             this.btnOdustani.TabIndex = 40;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // btnDodaj
             // 
@@ -78,6 +79,7 @@
             this.btnDodaj.TabIndex = 39;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = false;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // txtKolicina
             // 
@@ -159,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NoviProizvod";
             this.Text = "NoviProizvod";
+            this.Load += new System.EventHandler(this.NoviProizvod_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

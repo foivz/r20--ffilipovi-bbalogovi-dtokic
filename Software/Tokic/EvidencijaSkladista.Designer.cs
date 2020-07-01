@@ -49,6 +49,7 @@
             this.statistikaBtn.TabIndex = 22;
             this.statistikaBtn.Text = "Statistika";
             this.statistikaBtn.UseVisualStyleBackColor = false;
+            this.statistikaBtn.Click += new System.EventHandler(this.statistikaBtn_Click);
             // 
             // label6
             // 
@@ -74,6 +75,7 @@
             this.btnNarudzbe.TabIndex = 20;
             this.btnNarudzbe.Text = "Popis Narudžbi";
             this.btnNarudzbe.UseVisualStyleBackColor = false;
+            this.btnNarudzbe.Click += new System.EventHandler(this.btnNarudzbe_Click);
             // 
             // btnNoviProizvod
             // 
@@ -88,6 +90,7 @@
             this.btnNoviProizvod.TabIndex = 19;
             this.btnNoviProizvod.Text = "Novi proizvod";
             this.btnNoviProizvod.UseVisualStyleBackColor = false;
+            this.btnNoviProizvod.Click += new System.EventHandler(this.btnNoviProizvod_Click);
             // 
             // dgvSkladiste
             // 
@@ -112,6 +115,7 @@
             this.Controls.Add(this.dgvSkladiste);
             this.Name = "EvidencijaSkladista";
             this.Text = "EvidencijaSkladista";
+            this.Load += new System.EventHandler(this.EvidencijaSkladista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladiste)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
