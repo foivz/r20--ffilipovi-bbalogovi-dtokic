@@ -16,5 +16,32 @@ namespace Vedrana.Tokic
         {
             InitializeComponent();
         }
+
+        private void IzradaJelovnika_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (var item in jelo.PopisJelaPoTipu("Dorucak"))
+                {
+                    cbxDorucak.Items.Add(item.naziv);
+                }
+                foreach (var item in jelo.PopisJelaPoTipu("Rucak"))
+                {
+                    cbxRucak.Items.Add(item.naziv);
+                }
+                foreach (var item in jelo.PopisJelaPoTipu("Uzina"))
+                {
+                    cbxUzina.Items.Add(item.naziv);
+                }
+                foreach (var item in jelo.PopisJelaPoTipu("Vecera"))
+                {
+                    cbxVecera.Items.Add(item.naziv);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

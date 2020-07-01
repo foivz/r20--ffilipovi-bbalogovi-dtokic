@@ -220,6 +220,7 @@
             this.Controls.Add(this.cbxDorucak);
             this.Name = "IzradaJelovnika";
             this.Text = "IzradaJelovnika";
+            this.Load += new System.EventHandler(this.IzradaJelovnika_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
