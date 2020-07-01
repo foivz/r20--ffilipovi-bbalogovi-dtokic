@@ -43,5 +43,31 @@ namespace Vedrana.Tokic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new Entities())
+                {
+                    jelo d = jelo.PretraziJelaPoImenu(cbxDorucak.SelectedItem.ToString()).First();
+                    jelo r = jelo.PretraziJelaPoImenu(cbxRucak.SelectedItem.ToString()).First();
+                    jelo u = jelo.PretraziJelaPoImenu(cbxUzina.SelectedItem.ToString()).First();
+                    jelo v = jelo.PretraziJelaPoImenu(cbxVecera.SelectedItem.ToString()).First();
+
+                    new jelovnik(d, r, u, v, dtpDatum.Value, chbPoseban.Checked);
+                    Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

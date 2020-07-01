@@ -80,6 +80,7 @@
             this.btnOdustani.TabIndex = 49;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // btnUnesi
             // 
@@ -94,6 +95,7 @@
             this.btnUnesi.TabIndex = 48;
             this.btnUnesi.Text = "Unesi";
             this.btnUnesi.UseVisualStyleBackColor = false;
+            this.btnUnesi.Click += new System.EventHandler(this.btnUnesi_Click);
             // 
             // dtpDatum
             // 
