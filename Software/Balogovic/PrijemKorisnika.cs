@@ -103,5 +103,44 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void bntUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (var usluga in popisUsluga)
+                {
+                    usluga.oib = txtOIB.Text;
+                }
+                using (var context = new Entities())
+                {
+                    korisnik noviKorisnik = new korisnik(
+                        txtIme.Text,
+                        txtPrezime.Text,
+                        txtOIB.Text,
+                        txtAdresa.Text,
+                        dtpDatumRodjenja.Value,
+                        txtKontakt.Text,
+                        int.Parse(txtSoba.Text),
+                        popisUsluga,
+                        txtAlergije.Text,
+                        txtNapomene.Text);
+                    context.SaveChanges();
+
+                    //ugovor
+
+                }
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -82,6 +82,7 @@
             this.btnOdustani.TabIndex = 155;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // label12
             // 
@@ -349,6 +350,7 @@
             this.bntUnesi.TabIndex = 130;
             this.bntUnesi.Text = "Unesi korisnika";
             this.bntUnesi.UseVisualStyleBackColor = false;
+            this.bntUnesi.Click += new System.EventHandler(this.bntUnesi_Click);
             // 
             // PrijemKorisnika
             // 
