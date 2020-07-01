@@ -12,9 +12,25 @@ namespace Vedrana.Balogovic
 {
     public partial class UrediUslugu : Form
     {
-        public UrediUslugu()
+        usluga _usluga = null;
+        public UrediUslugu(usluga usl)
         {
             InitializeComponent();
+            _usluga = usl;
+        }
+
+        private void UrediUslugu_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCijena.Text = _usluga.cijena.ToString();
+                txtNaziv.Text = _usluga.naziv;
+                txtOpis.Text = _usluga.opis;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

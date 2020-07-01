@@ -157,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UrediUslugu";
             this.Text = "UrediUslugu";
+            this.Load += new System.EventHandler(this.UrediUslugu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
