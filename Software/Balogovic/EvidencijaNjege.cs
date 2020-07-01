@@ -20,6 +20,7 @@ namespace Vedrana.Balogovic
         List<usluga> sveUsluge = usluga.PronadjiUsluguPoImenu();
 
         DataTable dt = new DataTable();
+        List<string> popisNapomenaZaEvidentirat = new List<string>();
         public EvidencijaNjege(korisnik kor, zaposlenik zap)
         {
             InitializeComponent();
@@ -59,6 +60,40 @@ namespace Vedrana.Balogovic
                 dt.Columns.Add("Usluga", typeof(string));
                 dt.Columns.Add("Napomena", typeof(string));
                 dgvEvidentiraneUsluge.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnEvidentiraj_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = 0;
+                string uslNaziv = dgvPopisUsluga.CurrentRow.Cells[0].Value.ToString();
+                foreach (var usl in sveUsluge)
+                {
+                    if (usl.naziv == uslNaziv)
+                    {
+                        id = usl.uslugaId;
+                    }
+                }
+                using (var context = new Entities())
+                {
+                    var imauslugu = from iU in context.imaUslugus
+                                    where iU.uslugaId == id
+                                    && iU.oib == _korisnik.oib
+                                    select iU;
+                    popisUsluga.Add(imauslugu.First());
+                    popisNapomenaZaEvidentirat.Add(txtNapomenaEvidencije.Text);
+                }
+                DataRow row = dt.NewRow();
+                row["Usluga"] = uslNaziv;
+                row["Napomena"] = txtNapomenaEvidencije.Text;
+                dt.Rows.Add(row);
+                txtNapomenaEvidencije.Text = "";
             }
             catch (Exception ex)
             {

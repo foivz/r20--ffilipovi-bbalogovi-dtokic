@@ -128,6 +128,7 @@
             this.btnEvidentiraj.TabIndex = 132;
             this.btnEvidentiraj.Text = "Evidentiraj uslugu";
             this.btnEvidentiraj.UseVisualStyleBackColor = false;
+            this.btnEvidentiraj.Click += new System.EventHandler(this.btnEvidentiraj_Click);
             // 
             // label9
             // 
