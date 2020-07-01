@@ -49,7 +49,9 @@ namespace Vedrana.Balogovic
 
         private void btnUrediUslugu_Click(object sender, EventArgs e)
         {
-            
+            UrediUslugu forma = new UrediUslugu(dgvUsluge.CurrentRow.DataBoundItem as usluga);
+            forma.ShowDialog();
+            OsvjeziPopis();
         }
 
         private void btnObrisiUslugu_Click(object sender, EventArgs e)
