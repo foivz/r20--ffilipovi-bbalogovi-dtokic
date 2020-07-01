@@ -29,7 +29,13 @@ namespace Vedrana
         }
         public static List<evidencijaNjege> PretragaEvidencijaPoZaposlenicima(zaposlenik zaposlenik)
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var listaEvidencija = from eN in context.evidencijaNjeges
+                                      where eN.oib == zaposlenik.oib
+                                      select eN;
+                return listaEvidencija.ToList();
+            }
         }
     }
 }
