@@ -12,9 +12,18 @@ namespace Vedrana.Balogovic
 {
     public partial class EvidencijaNjege : Form
     {
-        public EvidencijaNjege()
+        korisnik _korisnik = null;
+        zaposlenik _zaposlenik = null;
+        public EvidencijaNjege(korisnik kor, zaposlenik zap)
         {
             InitializeComponent();
+            _korisnik = kor;
+            _zaposlenik = zap;
+        }
+
+        private void EvidencijaNjege_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

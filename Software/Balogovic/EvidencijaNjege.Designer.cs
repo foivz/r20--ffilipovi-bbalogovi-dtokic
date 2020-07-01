@@ -406,6 +406,7 @@
             this.Controls.Add(this.txtOIB);
             this.Name = "EvidencijaNjege";
             this.Text = "EvidencijaNjege";
+            this.Load += new System.EventHandler(this.EvidencijaNjege_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvidentiraneUsluge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPopisUsluga)).EndInit();
             this.ResumeLayout(false);
