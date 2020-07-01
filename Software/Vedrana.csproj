@@ -76,8 +76,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Balogovic\EvidencijaKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\EvidencijaKorisnika.Designer.cs">
+      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balogovic\EvidencijaNjege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\EvidencijaNjege.Designer.cs">
+      <DependentUpon>EvidencijaNjege.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\EvidencijaUsluge.cs" />
+    <Compile Include="Balogovic\EvidentiraneNjege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\EvidentiraneNjege.Designer.cs">
+      <DependentUpon>EvidentiraneNjege.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\Korisnik.cs" />
+    <Compile Include="Balogovic\NovaUsluga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\NovaUsluga.Designer.cs">
+      <DependentUpon>NovaUsluga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balogovic\PopisUsluga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\PopisUsluga.Designer.cs">
+      <DependentUpon>PopisUsluga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balogovic\PrijemKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\PrijemKorisnika.Designer.cs">
+      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balogovic\UrediUslugu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\UrediUslugu.Designer.cs">
+      <DependentUpon>UrediUslugu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balogovic\UredjivanjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\UredjivanjeKorisnika.Designer.cs">
+      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\Usluga.cs" />
     <Compile Include="Baza.Context.cs">
       <AutoGen>True</AutoGen>
@@ -219,6 +267,30 @@
     <Compile Include="zaposlenik.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Balogovic\EvidencijaKorisnika.resx">
+      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\EvidencijaNjege.resx">
+      <DependentUpon>EvidencijaNjege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\EvidentiraneNjege.resx">
+      <DependentUpon>EvidentiraneNjege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\NovaUsluga.resx">
+      <DependentUpon>NovaUsluga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\PopisUsluga.resx">
+      <DependentUpon>PopisUsluga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\PrijemKorisnika.resx">
+      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\UrediUslugu.resx">
+      <DependentUpon>UrediUslugu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\UredjivanjeKorisnika.resx">
+      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
