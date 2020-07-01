@@ -58,7 +58,47 @@ namespace Vedrana
         }
 		public void UrediJelovnik(jelo dorucak, jelo rucak, jelo uzina, jelo vecera)
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var query2 = from sn in context.seNalazis
+                             where sn.jelovnikId == this.jelovnikId
+                             select sn;
+                foreach (var item in query2)
+                {
+                    context.Entry(item).State = EntityState.Deleted;
+                }
+                context.SaveChanges();
+
+                seNalazi d = new seNalazi
+                {
+                    jeloId = dorucak.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(d);
+
+                seNalazi r = new seNalazi
+                {
+                    jeloId = rucak.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(r);
+
+                seNalazi u = new seNalazi
+                {
+                    jeloId = uzina.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(u);
+
+                seNalazi v = new seNalazi
+                {
+                    jeloId = vecera.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(v);
+
+                context.SaveChanges();
+            }
         }
 		public static Tuple<List<jelo>, List<jelo>> DanasnjiJelovnik()
         {
