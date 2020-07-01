@@ -47,7 +47,33 @@ namespace Vedrana
         }
         public static IEnumerable<object> PretragaKorisnika(bool bivsi, string ime = "", string prezime = "")
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var lista = from k in context.korisniks.AsEnumerable()
+                            where (bivsi ? k.osoba.datumZavrsetka != null : k.osoba.datumZavrsetka == null)
+                            && (ime == "" ? true : k.osoba.ime.ToLower() == ime.ToLower())
+                            && (prezime == "" ? true : k.osoba.prezime.ToLower() == prezime.ToLower())
+                            select new
+                            {
+                                k.oib,
+                                k.osoba.ime,
+                                k.osoba.prezime,
+                                k.brojSobe,
+                                usluge = string.Join(", ", (from u in context.uslugas
+                                         join iU in context.imaUslugus on u.uslugaId equals iU.uslugaId
+                                         where iU.oib == k.oib
+                                         select u.naziv).ToArray()),
+                                k.alergije,
+                                k.napomene,
+                                k.osoba.adresa,
+                                k.osoba.kontakt,
+                                k.osoba.datumRodjenja,
+                                k.osoba.datumPocetka,
+                                k.osoba.datumZavrsetka
+                            };
+
+                return lista.ToList();
+            }
         }
         public void PromjenaUslugaKorisnika(List<imaUslugu> popisUsluga)
         {
