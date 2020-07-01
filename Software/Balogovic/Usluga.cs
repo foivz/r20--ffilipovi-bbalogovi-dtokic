@@ -31,8 +31,16 @@ namespace Vedrana
         }
 		public void PromjenaCijeneUsluge(double cijena)
         {
-			throw new NotImplementedException();
-		}
+            using (var context = new Entities())
+            {
+                this.cijena = cijena;
+                var usluga = from u in context.uslugas
+                             where u.uslugaId == this.uslugaId
+                             select u;
+                usluga.First().cijena = cijena;
+                context.SaveChanges();
+            }
+        }
 		public static List<usluga> PronadjiUsluguPoImenu(string naziv = "")
         {
 			throw new NotImplementedException();
