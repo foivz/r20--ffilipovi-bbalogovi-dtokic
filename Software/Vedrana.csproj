@@ -60,6 +60,12 @@
   <ItemGroup>
     <Compile Include="Balogovic\EvidencijaUsluge.cs" />
     <Compile Include="Balogovic\Korisnik.cs" />
+    <Compile Include="Balogovic\NovaUsluga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\NovaUsluga.Designer.cs">
+      <DependentUpon>NovaUsluga.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\PopisUsluga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     <Compile Include="zaposlenik.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Balogovic\NovaUsluga.resx">
+      <DependentUpon>NovaUsluga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Balogovic\PopisUsluga.resx">
       <DependentUpon>PopisUsluga.cs</DependentUpon>
     </EmbeddedResource>

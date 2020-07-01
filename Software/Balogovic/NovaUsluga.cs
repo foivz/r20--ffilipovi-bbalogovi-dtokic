@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Vedrana.Balogovic
 {
-    public partial class PopisUsluga : Form
+    public partial class NovaUsluga : Form
     {
-        public PopisUsluga()
+        public NovaUsluga()
         {
             InitializeComponent();
-        }
-
-        private void PopisUsluga_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

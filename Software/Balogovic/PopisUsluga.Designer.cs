@@ -112,6 +112,7 @@
             this.Controls.Add(this.dgvUsluge);
             this.Name = "PopisUsluga";
             this.Text = "PopisUsluga";
+            this.Load += new System.EventHandler(this.PopisUsluga_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsluge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
