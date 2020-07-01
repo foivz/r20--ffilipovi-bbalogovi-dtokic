@@ -10,8 +10,25 @@ namespace Vedrana
 	{
 		public usluga(string nnaziv, double ncijena, string nopis, List<int> npopisProizvoda, List<double> kolicinaProizvoda)
 		{
-			throw new NotImplementedException();
-		}
+            using (var context = new Entities())
+            {
+                naziv = nnaziv;
+                cijena = ncijena;
+                opis = nopis;
+                context.uslugas.Add(this);
+                context.SaveChanges();
+
+                for (int i = 0; i < npopisProizvoda.Count(); i++)
+                {
+                    koristiProizvod temp = new koristiProizvod();
+                    temp.uslugaId = this.uslugaId;
+                    temp.proizvodId = npopisProizvoda[i];
+                    temp.kolicina = kolicinaProizvoda[i];
+                    context.koristiProizvods.Add(temp);
+                }
+                context.SaveChanges();
+            }
+        }
 		public void PromjenaCijeneUsluge(double cijena)
         {
 			throw new NotImplementedException();
