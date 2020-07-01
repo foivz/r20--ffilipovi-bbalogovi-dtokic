@@ -113,7 +113,41 @@ namespace Vedrana
         }
         public void UredjivanjePodataka(string nkontakt = "", int soba = 0, string nnapomene = "", List<imaUslugu> npopisUsluga = null)
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                if (nkontakt != "")
+                {
+                    this.osoba.kontakt = nkontakt;
+                }
+                if (soba != 0)
+                {
+                    this.brojSobe = soba;
+                }
+                if (nnapomene != "")
+                {
+                    this.napomene = nnapomene;
+                }
+                if (npopisUsluga != null)
+                {
+                    foreach (var item in this.imaUslugus)
+                    {
+                        var delete = (from iu in context.imaUslugus
+                                      where iu.imaUsluguId == item.imaUsluguId
+                                      select iu).First();
+                        context.Entry(delete).State = EntityState.Deleted;
+                    }
+                    context.SaveChanges();
+                    foreach (var novaUsluga in npopisUsluga)
+                    {
+                        imaUslugu temp = new imaUslugu();
+                        temp.imaUsluguId = novaUsluga.imaUsluguId;
+                        temp.oib = novaUsluga.oib;
+                        temp.uslugaId = novaUsluga.uslugaId;
+                        context.imaUslugus.Add(temp);
+                    }
+                }
+                context.SaveChanges();
+            }
         }
     }
 }
