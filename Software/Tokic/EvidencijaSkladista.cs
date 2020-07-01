@@ -43,7 +43,8 @@ namespace Vedrana.Tokic
 
         private void statistikaBtn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Statistika.Statistika report = new Statistika.Statistika();
+            report.ShowDialog();
         }
     }
 }
