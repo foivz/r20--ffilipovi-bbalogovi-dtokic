@@ -23,7 +23,18 @@ namespace Vedrana.Tokic
         }
 		public static IEnumerable<object> PopisNarucenihStvari()
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var lista = from sn in context.seNarucujes.AsEnumerable()
+                            select new
+                            {
+                                Naziv = sn.proizvod.naziv,
+                                Tip = sn.proizvod.tip,
+                                Količina = sn.kolicina,
+                                Datum = sn.narudzba.datum.Value.Date
+                            };
+                return lista.ToList();
+            }
         }
 	}
 }
