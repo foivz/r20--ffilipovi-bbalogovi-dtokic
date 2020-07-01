@@ -171,6 +171,12 @@
     <Compile Include="Tokic\NovoJelo.Designer.cs">
       <DependentUpon>NovoJelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tokic\PopisNarudzbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tokic\PopisNarudzbi.Designer.cs">
+      <DependentUpon>PopisNarudzbi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tokic\Proizvod.cs" />
     <Compile Include="Tokic\Skladiste.cs" />
     <Compile Include="Tokic\UredjivanjeJelovnika.cs">
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\NovoJelo.resx">
       <DependentUpon>NovoJelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tokic\PopisNarudzbi.resx">
+      <DependentUpon>PopisNarudzbi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\UredjivanjeJelovnika.resx">
       <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
