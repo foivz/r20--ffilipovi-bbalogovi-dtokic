@@ -29,7 +29,14 @@ namespace Vedrana
         }
 		public static List<jelo> PretraziJelaPoImenu(string naziv = "")
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var query = from j in context.jeloes
+                            where naziv == "" ? true : j.naziv == naziv
+                            select j;
+
+                return query.ToList();
+            }
         }
 		public static List<jelo> PopisJelaPoTipu(string tip)
         {
