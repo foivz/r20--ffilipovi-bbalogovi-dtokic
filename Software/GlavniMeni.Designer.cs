@@ -79,6 +79,7 @@
             this.korisniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.korisniciBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.korisniciBtn.UseVisualStyleBackColor = false;
+            this.korisniciBtn.Click += new System.EventHandler(this.korisniciBtn_Click);
             // 
             // zaposleniciBtn
             // 
@@ -101,6 +102,7 @@
             this.zaposleniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.zaposleniciBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.zaposleniciBtn.UseVisualStyleBackColor = false;
+            this.zaposleniciBtn.Click += new System.EventHandler(this.zaposleniciBtn_Click);
             // 
             // logoPanel
             // 
@@ -122,6 +124,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -160,6 +163,7 @@
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.userBtn.UseVisualStyleBackColor = false;
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // aktivniMeniLbl
             // 
@@ -228,6 +232,7 @@
             this.jelaBtn.TabIndex = 0;
             this.jelaBtn.Text = "Jela";
             this.jelaBtn.UseVisualStyleBackColor = true;
+            this.jelaBtn.Click += new System.EventHandler(this.jelaBtn_Click);
             // 
             // jelovniciBtn
             // 
@@ -249,6 +254,7 @@
             this.jelovniciBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.jelovniciBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.jelovniciBtn.UseVisualStyleBackColor = false;
+            this.jelovniciBtn.Click += new System.EventHandler(this.jelovniciBtn_Click);
             // 
             // skladisteBtn
             // 
@@ -270,6 +276,7 @@
             this.skladisteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.skladisteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.skladisteBtn.UseVisualStyleBackColor = false;
+            this.skladisteBtn.Click += new System.EventHandler(this.skladisteBtn_Click);
             // 
             // korisniciPnl
             // 
@@ -298,6 +305,7 @@
             this.uslugeBtn.TabIndex = 0;
             this.uslugeBtn.Text = "Usluge";
             this.uslugeBtn.UseVisualStyleBackColor = true;
+            this.uslugeBtn.Click += new System.EventHandler(this.uslugeBtn_Click);
             // 
             // userPnl
             // 
@@ -331,6 +339,7 @@
             this.odjavaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.odjavaBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.odjavaBtn.UseVisualStyleBackColor = false;
+            this.odjavaBtn.Click += new System.EventHandler(this.odjavaBtn_Click);
             // 
             // promijeniPassBtn
             // 
@@ -353,6 +362,7 @@
             this.promijeniPassBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.promijeniPassBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.promijeniPassBtn.UseVisualStyleBackColor = false;
+            this.promijeniPassBtn.Click += new System.EventHandler(this.promijeniPassBtn_Click);
             // 
             // formPanel
             // 
@@ -374,6 +384,7 @@
             this.Controls.Add(this.sideNavPanel);
             this.Name = "GlavniMeni";
             this.Text = "Dom \"Vedrana\"";
+            this.Load += new System.EventHandler(this.GlavniMeni_Load);
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

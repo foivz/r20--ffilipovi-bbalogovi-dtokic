@@ -13,3 +13,5 @@ C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\bi
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.csproj.CopyComplete
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.exe
 C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.pdb
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.GlavniMeni.resources
