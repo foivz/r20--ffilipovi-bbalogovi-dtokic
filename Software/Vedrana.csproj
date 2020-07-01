@@ -133,6 +133,12 @@
     <Compile Include="soba.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tokic\EvidencijaJela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tokic\EvidencijaJela.Designer.cs">
+      <DependentUpon>EvidencijaJela.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tokic\Jelo.cs" />
     <Compile Include="Tokic\Jelovnik.cs" />
     <Compile Include="Tokic\Proizvod.cs" />
@@ -161,6 +167,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tokic\EvidencijaJela.resx">
+      <DependentUpon>EvidencijaJela.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Baza.Designer.cs</LastGenOutput>
