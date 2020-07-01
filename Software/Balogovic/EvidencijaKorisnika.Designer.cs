@@ -268,6 +268,7 @@
             this.Controls.Add(this.dgvKorisnici);
             this.Name = "EvidencijaKorisnika";
             this.Text = "EvidencijaKorisnika";
+            this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
