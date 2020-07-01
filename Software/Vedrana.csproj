@@ -78,6 +78,12 @@
     <Compile Include="Balogovic\PopisUsluga.Designer.cs">
       <DependentUpon>PopisUsluga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Balogovic\PrijemKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balogovic\PrijemKorisnika.Designer.cs">
+      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Balogovic\UrediUslugu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Balogovic\PopisUsluga.resx">
       <DependentUpon>PopisUsluga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balogovic\PrijemKorisnika.resx">
+      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Balogovic\UrediUslugu.resx">
       <DependentUpon>UrediUslugu.cs</DependentUpon>
