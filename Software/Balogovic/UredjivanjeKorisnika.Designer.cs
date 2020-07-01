@@ -285,6 +285,7 @@
             this.btnUkloniUslugu.TabIndex = 155;
             this.btnUkloniUslugu.Text = "Ukloni uslugu";
             this.btnUkloniUslugu.UseVisualStyleBackColor = false;
+            this.btnUkloniUslugu.Click += new System.EventHandler(this.btnUkloniUslugu_Click);
             // 
             // btnDodajUslugu
             // 

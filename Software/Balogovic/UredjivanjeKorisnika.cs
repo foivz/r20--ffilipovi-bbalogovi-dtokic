@@ -98,5 +98,41 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnUkloniUslugu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string odabrano = dgvPopisUsluga.CurrentRow.Cells[0].Value.ToString();
+
+                cbxUsluge.Items.Add(odabrano);
+
+                int id = -1;
+                foreach (var item in sveUsluge)
+                {
+                    if (item.naziv == odabrano)
+                    {
+                        id = item.uslugaId;
+                    }
+                }
+                foreach (var item in popisUsluga.ToList())
+                {
+                    if (item.uslugaId == id)
+                    {
+                        popisUsluga.Remove(item);
+                    }
+                }
+
+                popisUslugaTablica.Remove(odabrano);
+
+                dgvPopisUsluga.DataSource = null;
+                var result = popisUslugaTablica.Select(s => new { Usluga = s }).ToList();
+                dgvPopisUsluga.DataSource = result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
