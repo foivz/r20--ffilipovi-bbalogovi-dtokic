@@ -12,11 +12,20 @@ namespace Vedrana
         }
         public evidencijaNjege(imaUslugu usluga, korisnik korisnik, zaposlenik zaposlenik, string nnapomena)
         {
-            throw new NotImplementedException();
+            oib = zaposlenik.oib;
+            imaUsluguId = usluga.imaUsluguId;
+            napomena = nnapomena;
+            datum = DateTime.Now;
         }
         public static List<evidencijaNjege> PretragaEvidencijaPoKorisnicima(korisnik korisnik)
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var listaEvidencija = from eN in context.evidencijaNjeges
+                                      where eN.imaUslugu.oib == korisnik.oib
+                                      select eN;
+                return listaEvidencija.ToList();
+            }
         }
         public static List<evidencijaNjege> PretragaEvidencijaPoZaposlenicima(zaposlenik zaposlenik)
         {
