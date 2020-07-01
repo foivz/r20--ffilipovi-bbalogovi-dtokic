@@ -16,5 +16,10 @@ namespace Vedrana.Balogovic
         {
             InitializeComponent();
         }
+
+        private void UredjivanjeKorisnika_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -115,6 +115,7 @@
             this.btnEvidentiraneNjege.TabIndex = 52;
             this.btnEvidentiraneNjege.Text = "Evidentirane njege";
             this.btnEvidentiraneNjege.UseVisualStyleBackColor = false;
+            this.btnEvidentiraneNjege.Click += new System.EventHandler(this.btnEvidentiraneNjege_Click);
             // 
             // btnEvidentirajNjegu
             // 

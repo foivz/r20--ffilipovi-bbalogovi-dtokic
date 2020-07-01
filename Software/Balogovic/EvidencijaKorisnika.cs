@@ -123,5 +123,10 @@ namespace Vedrana.Balogovic
         {
             OsvjeziPopis();
         }
+
+        private void btnEvidentiraneNjege_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

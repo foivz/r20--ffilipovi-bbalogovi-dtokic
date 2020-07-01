@@ -319,6 +319,7 @@
             this.Controls.Add(this.dgvEvidentiraneNjege);
             this.Name = "EvidentiraneNjege";
             this.Text = "EvidentiraneNjege";
+            this.Load += new System.EventHandler(this.EvidentiraneNjege_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvidentiraneNjege)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
