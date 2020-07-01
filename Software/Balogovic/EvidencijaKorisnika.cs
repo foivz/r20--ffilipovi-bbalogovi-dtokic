@@ -126,7 +126,24 @@ namespace Vedrana.Balogovic
 
         private void btnEvidentiraneNjege_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                string oib = dgvKorisnici.CurrentRow.Cells[0].Value.ToString();
+                using (var context = new Entities())
+                {
+                    korisnik uredi = (from k in context.korisniks
+                                      where k.oib == oib
+                                      select k).First<korisnik>();
+                    EvidentiraneNjege forma = new EvidentiraneNjege(uredi);
+                    forma.ShowDialog();
+                    OsvjeziPopis();
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
