@@ -335,6 +335,7 @@
             this.Controls.Add(this.dgvJelovnici);
             this.Name = "EvidencijaJelovnika";
             this.Text = "EvidencijaJelovnika";
+            this.Load += new System.EventHandler(this.EvidencijaJelovnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJelovnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

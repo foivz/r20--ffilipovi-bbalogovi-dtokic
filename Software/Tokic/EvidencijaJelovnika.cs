@@ -16,5 +16,93 @@ namespace Vedrana.Tokic
         {
             InitializeComponent();
         }
+        private void EvidencijaJelovnika_Load(object sender, EventArgs e)
+        {
+            OsvjeziPodatke();
+        }
+        private void OsvjeziPodatke()
+        {
+            try
+            {
+                var danasnjiN = jelovnik.DanasnjiJelovnik().Item1;
+                var danasnjiP = jelovnik.DanasnjiJelovnik().Item2;
+                if (danasnjiN != null)
+                {
+                    foreach (var item in danasnjiN)
+                    {
+                        if (item.tipJela == "Dorucak")
+                            txtDorucak.Text = item.naziv;
+                        else if (item.tipJela == "Rucak")
+                            txtRucak.Text = item.naziv;
+                        else if (item.tipJela == "Uzina")
+                            txtUzina.Text = item.naziv;
+                        else if (item.tipJela == "Vecera")
+                            txtVecera.Text = item.naziv;
+                    }
+                }
+                if (danasnjiP != null)
+                {
+                    foreach (var item in danasnjiP)
+                    {
+                        if (item.tipJela == "Dorucak")
+                            txtDorucakP.Text = item.naziv;
+                        else if (item.tipJela == "Rucak")
+                            txtRucakP.Text = item.naziv;
+                        else if (item.tipJela == "Uzina")
+                            txtUzinaP.Text = item.naziv;
+                        else if (item.tipJela == "Vecera")
+                            txtVeceraP.Text = item.naziv;
+                    }
+                }
+
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Doručak", typeof(string));
+                dt.Columns.Add("Ručak", typeof(string));
+                dt.Columns.Add("Užina", typeof(string));
+                dt.Columns.Add("Večera", typeof(string));
+                dt.Columns.Add("Datum", typeof(DateTime));
+                dt.Columns.Add("Poseban", typeof(string));
+
+                var sve = jelovnik.SviJelovnici();
+                foreach (var jlvnk in sve.Item1)
+                {
+                    DataRow row = dt.NewRow();
+                    foreach (var item in jlvnk.ToList())
+                    {
+                        if (item.tipJela == "Dorucak")
+                            row["Doručak"] = item.naziv;
+                        else if (item.tipJela == "Rucak")
+                            row["Ručak"] = item.naziv;
+                        else if (item.tipJela == "Uzina")
+                            row["Užina"] = item.naziv;
+                        else if (item.tipJela == "Vecera")
+                            row["Večera"] = item.naziv;
+                    }
+                    dt.Rows.Add(row);
+                }
+                for (int i = 0; i < sve.Item2.Count(); i++)
+                {
+                    dt.Rows[i]["Datum"] = sve.Item2[i].Date;
+                    if (sve.Item3[i])
+                    {
+                        dt.Rows[i]["Poseban"] = "Da";
+                    }
+                    else
+                    {
+                        dt.Rows[i]["Poseban"] = "Ne";
+                    }
+                }
+
+                DataView dv = dt.DefaultView;
+                dv.Sort = "Datum asc";
+                dt = dv.ToTable();
+                dgvJelovnici.DataSource = null;
+                dgvJelovnici.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                // MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
