@@ -63,5 +63,39 @@ namespace Vedrana.Tokic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<int> sastojciId = new List<int>();
+                List<double> kolicina = new List<double>();
+
+                using (var context = new Entities())
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        var id = (from p in context.proizvods.AsEnumerable()
+                                  where p.naziv == dt.Rows[i][0].ToString()
+                                  select p.proizvodId).First();
+                        sastojciId.Add(id);
+                        kolicina.Add(double.Parse(dt.Rows[i][1].ToString()));
+                    }
+                }
+
+
+                new jelo(txtNaziv.Text, cbxTip.SelectedItem.ToString(), sastojciId, kolicina);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
