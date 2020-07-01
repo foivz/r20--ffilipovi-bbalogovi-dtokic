@@ -159,6 +159,7 @@
             this.btnDodajSastojak.TabIndex = 32;
             this.btnDodajSastojak.Text = "Dodaj proizvod";
             this.btnDodajSastojak.UseVisualStyleBackColor = false;
+            this.btnDodajSastojak.Click += new System.EventHandler(this.btnDodajSastojak_Click);
             // 
             // txtKolicina
             // 
@@ -232,6 +233,7 @@
             this.Controls.Add(this.dgvProizvodi);
             this.Name = "NovaUsluga";
             this.Text = "NovaUsluga";
+            this.Load += new System.EventHandler(this.NovaUsluga_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProizvodi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
