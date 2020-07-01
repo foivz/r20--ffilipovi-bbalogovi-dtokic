@@ -43,8 +43,15 @@ namespace Vedrana
         }
 		public static List<usluga> PronadjiUsluguPoImenu(string naziv = "")
         {
-			throw new NotImplementedException();
-		}
+            using (var context = new Entities())
+            {
+                var usluga = from u in context.uslugas
+                             where naziv == "" ? true : u.naziv == naziv
+                             select u;
+
+                return usluga.ToList();
+            }
+        }
 	}
 
 }
