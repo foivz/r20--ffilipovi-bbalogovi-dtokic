@@ -134,5 +134,31 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void bntUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (var usluga in popisUsluga)
+                {
+                    usluga.oib = txtOIB.Text;
+                }
+                trenutniKornisnik.UredjivanjePodataka(
+                    txtKontakt.Text,
+                    int.Parse(txtSoba.Text),
+                    txtNapomene.Text,
+                    popisUsluga);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
