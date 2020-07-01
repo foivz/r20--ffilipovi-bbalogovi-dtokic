@@ -65,6 +65,7 @@
             this.btnObrisi.TabIndex = 26;
             this.btnObrisi.Text = "Obriši Jelo";
             this.btnObrisi.UseVisualStyleBackColor = false;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // btnFiltrirajIme
             // 
@@ -150,6 +151,7 @@
             this.btnNovoJelo.TabIndex = 19;
             this.btnNovoJelo.Text = "Novo Jelo";
             this.btnNovoJelo.UseVisualStyleBackColor = false;
+            this.btnNovoJelo.Click += new System.EventHandler(this.btnNovoJelo_Click);
             // 
             // dgvJela
             // 

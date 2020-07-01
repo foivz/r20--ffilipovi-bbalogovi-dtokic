@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -71,6 +72,35 @@ namespace Vedrana.Tokic
                 for (int i = 3; i < dgvJela.ColumnCount; i++)
                 {
                     dgvJela.Columns[i].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnNovoJelo_Click(object sender, EventArgs e)
+        {
+            NovoJelo forma = new NovoJelo();
+            forma.ShowDialog();
+            OsvjeziPodatke();
+        }
+
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new Entities())
+                {
+                    string jelo = dgvJela.CurrentRow.Cells[0].Value.ToString();
+
+                    var zaBrisat = from j in context.jeloes.AsEnumerable()
+                                   where j.jeloId == int.Parse(jelo)
+                                   select j;
+                    context.Entry(zaBrisat.First()).State = EntityState.Deleted;
+                    context.SaveChanges();
+                    OsvjeziPodatke();
                 }
             }
             catch (Exception ex)
