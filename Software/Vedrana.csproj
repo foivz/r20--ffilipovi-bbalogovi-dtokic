@@ -133,6 +133,10 @@
     <Compile Include="soba.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tokic\Jelo.cs" />
+    <Compile Include="Tokic\Jelovnik.cs" />
+    <Compile Include="Tokic\Proizvod.cs" />
+    <Compile Include="Tokic\Skladiste.cs" />
     <Compile Include="usluga.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
