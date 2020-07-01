@@ -16,5 +16,15 @@ namespace Vedrana.Filipovic
         {
             InitializeComponent();
         }
+
+        private void btnNovaLozinka_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
