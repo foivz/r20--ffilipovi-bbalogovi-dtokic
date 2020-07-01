@@ -1,0 +1,5 @@
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Lib\bin\Debug\Lib.dll
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Lib\bin\Debug\Lib.pdb
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Lib\obj\Debug\Lib.csproj.CoreCompileInputs.cache
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Lib\obj\Debug\Lib.dll
+C:\Users\Bobi\Desktop\FOI\PI\project\r20--ffilipovi-bbalogovi-dtokic\Lib\obj\Debug\Lib.pdb
