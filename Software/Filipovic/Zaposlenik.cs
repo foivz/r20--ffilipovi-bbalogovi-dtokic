@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lib;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -47,7 +48,7 @@ namespace Vedrana
                 {
                     user.First<zaposlenik>().lozinka = finalString;
                     context.SaveChanges();
-                    // potrebno implementirati slanje maila
+                    SlanjeMaila.PosaljiMail(email, "Zaboravljena lozinka", $"Zatražili ste resetiranje lozinke.\nVaša nova lozinka je: {finalString}");
                 }
                 else
                     throw new Exception("Pogrešno upisani podaci. Molimo pokušajte opet.");

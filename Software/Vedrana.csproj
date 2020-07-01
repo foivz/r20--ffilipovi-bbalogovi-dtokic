@@ -82,6 +82,12 @@
     <Compile Include="Filipovic\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Filipovic\ZaboravljenaLozinka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filipovic\ZaboravljenaLozinka.Designer.cs">
+      <DependentUpon>ZaboravljenaLozinka.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filipovic\Zaposlenik.cs" />
     <Compile Include="GlavniMeni.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Filipovic\ZaboravljenaLozinka.resx">
+      <DependentUpon>ZaboravljenaLozinka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlavniMeni.resx">
       <DependentUpon>GlavniMeni.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.csproj">
+      <Project>{B076A299-96EC-44AB-8B09-2A131062D349}</Project>
+      <Name>Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
