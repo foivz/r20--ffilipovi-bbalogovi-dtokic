@@ -58,7 +58,24 @@ namespace Vedrana.Balogovic
 
         private void btnUrediKorisnika_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                string oib = dgvKorisnici.CurrentRow.Cells[0].Value.ToString();
+                using (var context = new Entities())
+                {
+                    korisnik uredi = (from k in context.korisniks
+                                      where k.oib == oib
+                                      select k).First<korisnik>();
+                    UredjivanjeKorisnika forma = new UredjivanjeKorisnika(uredi);
+                    forma.ShowDialog();
+                    OsvjeziPopis();
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUkloni_Click(object sender, EventArgs e)
