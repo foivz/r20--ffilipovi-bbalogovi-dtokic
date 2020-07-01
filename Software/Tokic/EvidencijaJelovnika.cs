@@ -104,5 +104,44 @@ namespace Vedrana.Tokic
                 // MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnNoviJelovnik_Click(object sender, EventArgs e)
+        {
+            IzradaJelovnika forma = new IzradaJelovnika();
+            forma.ShowDialog();
+            OsvjeziPodatke();
+        }
+
+        private void btnUrediJelovnik_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new Entities())
+                {
+                    if (dgvJelovnici.CurrentRow != null)
+                    {
+                        var datum = DateTime.Parse(dgvJelovnici.CurrentRow.Cells[4].Value.ToString());
+                        var poseban = dgvJelovnici.CurrentRow.Cells[5].Value.ToString();
+                        bool p = false;
+                        if (poseban == "Da")
+                            p = true;
+
+                        var jelovnik = (from j in context.jelovniks.AsEnumerable()
+                                        where j.datum.Value.Date == datum.Date
+                                        && j.posebanJelovnik == Convert.ToByte(p)
+                                        select j).First();
+                        Console.WriteLine(p);
+                        Console.WriteLine(datum.Date);
+                        UredjivanjeJelovnika forma = new UredjivanjeJelovnika(jelovnik);
+                        forma.ShowDialog();
+                        OsvjeziPodatke();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -67,6 +67,7 @@
             this.btnUrediJelovnik.TabIndex = 61;
             this.btnUrediJelovnik.Text = "Uredi Jelovnik";
             this.btnUrediJelovnik.UseVisualStyleBackColor = false;
+            this.btnUrediJelovnik.Click += new System.EventHandler(this.btnUrediJelovnik_Click);
             // 
             // label6
             // 
@@ -158,6 +159,7 @@
             this.btnNoviJelovnik.TabIndex = 53;
             this.btnNoviJelovnik.Text = "Novi Jelovnik";
             this.btnNoviJelovnik.UseVisualStyleBackColor = false;
+            this.btnNoviJelovnik.Click += new System.EventHandler(this.btnNoviJelovnik_Click);
             // 
             // txtVecera
             // 

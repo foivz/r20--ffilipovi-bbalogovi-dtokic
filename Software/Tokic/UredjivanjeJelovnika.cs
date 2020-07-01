@@ -12,7 +12,7 @@ namespace Vedrana.Tokic
 {
     public partial class UredjivanjeJelovnika : Form
     {
-        public UredjivanjeJelovnika()
+        public UredjivanjeJelovnika(jelovnik jel)
         {
             InitializeComponent();
         }
