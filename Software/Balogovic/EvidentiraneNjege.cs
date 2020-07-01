@@ -68,5 +68,10 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnZatvori_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

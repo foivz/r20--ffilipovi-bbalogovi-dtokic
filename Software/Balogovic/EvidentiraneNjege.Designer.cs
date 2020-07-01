@@ -278,6 +278,7 @@
             this.btnZatvori.TabIndex = 125;
             this.btnZatvori.Text = "Zatvori";
             this.btnZatvori.UseVisualStyleBackColor = false;
+            this.btnZatvori.Click += new System.EventHandler(this.btnZatvori_Click);
             // 
             // dgvEvidentiraneNjege
             // 
