@@ -207,6 +207,7 @@
             this.Controls.Add(this.cbxDorucak);
             this.Name = "UredjivanjeJelovnika";
             this.Text = "UredjivanjeJelovnika";
+            this.Load += new System.EventHandler(this.UredjivanjeJelovnika_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
