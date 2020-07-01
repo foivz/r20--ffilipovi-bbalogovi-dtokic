@@ -167,6 +167,12 @@
     </Compile>
     <Compile Include="Tokic\Proizvod.cs" />
     <Compile Include="Tokic\Skladiste.cs" />
+    <Compile Include="Tokic\UredjivanjeJelovnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tokic\UredjivanjeJelovnika.Designer.cs">
+      <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="usluga.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\NovoJelo.resx">
       <DependentUpon>NovoJelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tokic\UredjivanjeJelovnika.resx">
+      <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
