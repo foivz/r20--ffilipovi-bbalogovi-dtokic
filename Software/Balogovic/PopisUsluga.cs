@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,7 +54,19 @@ namespace Vedrana.Balogovic
 
         private void btnObrisiUslugu_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                using (var context = new Entities())
+                {
+                    context.Entry(dgvUsluge.CurrentRow.DataBoundItem as usluga).State = EntityState.Deleted;
+                    context.SaveChanges();
+                    OsvjeziPopis();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
