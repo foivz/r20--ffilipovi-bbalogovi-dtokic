@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vedrana.Filipovic;
+using Vedrana.Tokic;
 
 namespace Vedrana
 {
@@ -116,7 +117,7 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
             aktivniMeniLbl.Text = "Skladište";
             // otvori formu evidencije skladišta
-            // otvoriFormu();
+            otvoriFormu(new EvidencijaSkladista());
         }
 
         private void jelovniciBtn_Click(object sender, EventArgs e)
@@ -126,14 +127,14 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Utensils;
             aktivniMeniLbl.Text = "Jelovnici";
             // otvori formu evidencije jelovnika
-            // otvoriFormu();
+            otvoriFormu(new EvidencijaJelovnika());
         }
 
         private void jelaBtn_Click(object sender, EventArgs e)
         {
             aktivniMeniLbl.Text = "Jelovnici > Jela";
             // otvori formu evidencije jela
-            // otvoriFormu();
+            otvoriFormu(new EvidencijaJela());
         }
 
         private void userBtn_Click(object sender, EventArgs e)

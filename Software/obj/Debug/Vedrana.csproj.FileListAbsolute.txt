@@ -34,3 +34,11 @@ C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj
 C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.csproj.CopyComplete
 C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.exe
 C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.pdb
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.EvidencijaJela.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.EvidencijaJelovnika.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.EvidencijaSkladista.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.IzradaJelovnika.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.NoviProizvod.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.NovoJelo.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.PopisNarudzbi.resources
+C:\Users\Danijel\source\repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Tokic.UredjivanjeJelovnika.resources
