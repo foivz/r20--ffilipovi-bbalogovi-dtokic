@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Vedrana">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>7f9663ef-4e84-41b0-a804-d13087aadc53</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet">
+      <Query>
+        <DataSourceName>Vedrana</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="kolicina">
+          <DataField>kolicina</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="narudzba">
+          <DataField>narudzba</DataField>
+          <rd:TypeName>Vedrana.narudzba</rd:TypeName>
+        </Field>
+        <Field Name="narudzbaId">
+          <DataField>narudzbaId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="proizvod">
+          <DataField>proizvod</DataField>
+          <rd:TypeName>Vedrana.proizvod</rd:TypeName>
+        </Field>
+        <Field Name="proizvodId">
+          <DataField>proizvodId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="seNarucujeId">
+          <DataField>seNarucujeId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Vedrana</rd:DataSetName>
+        <rd:TableName>seNarucuje</rd:TableName>
+        <rd:ObjectDataSourceType>Vedrana.seNarucuje, Vedrana, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>Vedrana</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="naSkladistu">
+          <DataField>naSkladistu</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="naziv">
+          <DataField>naziv</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="proizvodId">
+          <DataField>proizvodId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="tip">
+          <DataField>tip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Vedrana</rd:DataSetName>
+        <rd:TableName>proizvod</rd:TableName>
+        <rd:ObjectDataSourceType>Vedrana.proizvod, Vedrana, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -357,8 +434,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet</DataSetName>
-            <Top>0.35983cm</Top>
-            <Left>0.45687cm</Left>
+            <Top>0.49424cm</Top>
+            <Left>0.47836cm</Left>
             <Height>7.69875cm</Height>
             <Width>15.59625cm</Width>
             <Style>
@@ -371,10 +448,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.36434in</Height>
+        <Height>3.4485in</Height>
         <Style />
       </Body>
-      <Width>6.51667in</Width>
+      <Width>6.5in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -394,5 +471,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>7fb5bbd7-84a5-4a7f-8ca8-b51fbdf9ccae</rd:ReportID>
+  <rd:ReportID>bff60447-97bf-4202-bc30-93ae766d880d</rd:ReportID>
 </Report>

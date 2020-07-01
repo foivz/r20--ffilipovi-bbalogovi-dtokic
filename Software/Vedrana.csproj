@@ -272,6 +272,8 @@
       <DependentUpon>Baza.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\proizvod.datasource" />
+    <None Include="Properties\DataSources\seNarucuje.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
