@@ -9,8 +9,53 @@ namespace Vedrana
 	{
 		public jelovnik(jelo dorucak, jelo rucak, jelo uzina, jelo vecera, DateTime datum, bool poseban = false)
 		{
-			throw new NotImplementedException();
-		}
+            using (var context = new Entities())
+            {
+                var querry = from j in context.jelovniks.AsEnumerable()
+                             where j.datum.Value.Date == datum.Date
+                             && j.posebanJelovnik == Convert.ToByte(poseban)
+                             select j;
+                if (querry.Count() > 0)
+                {
+                    throw new Exception("Postoji jelovnik za taj dan!");
+                }
+
+                this.datum = datum;
+                this.posebanJelovnik = Convert.ToByte(poseban);
+                context.jelovniks.Add(this);
+                context.SaveChanges();
+
+                seNalazi d = new seNalazi
+                {
+                    jeloId = dorucak.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(d);
+
+                seNalazi r = new seNalazi
+                {
+                    jeloId = rucak.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(r);
+
+                seNalazi u = new seNalazi
+                {
+                    jeloId = uzina.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(u);
+
+                seNalazi v = new seNalazi
+                {
+                    jeloId = vecera.jeloId,
+                    jelovnikId = this.jelovnikId
+                };
+                context.seNalazis.Add(v);
+
+                context.SaveChanges();
+            }
+        }
 		public void UrediJelovnik(jelo dorucak, jelo rucak, jelo uzina, jelo vecera)
         {
 			throw new NotImplementedException();
