@@ -97,11 +97,19 @@ namespace Vedrana
         }
         public void MakniKorisnika(korisnik korisnik)
         {
-            throw new NotImplementedException();
+            korisnik.osoba.datumZavrsetka = DateTime.Now;
         }
         public void PromjeniSobu(int brojSobe)
         {
-            throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                this.brojSobe = brojSobe;
+                var user = from k in context.korisniks
+                           where k.oib == this.oib
+                           select k;
+                user.First().brojSobe = brojSobe;
+                context.SaveChanges();
+            }
         }
         public void UredjivanjePodataka(string nkontakt = "", int soba = 0, string nnapomene = "", List<imaUslugu> npopisUsluga = null)
         {
