@@ -19,7 +19,24 @@ namespace Vedrana.Balogovic
 
         private void PopisUsluga_Load(object sender, EventArgs e)
         {
-
+            OsvjeziPopis();
+        }
+        private void OsvjeziPopis()
+        {
+            try
+            {
+                dgvUsluge.DataSource = null;
+                dgvUsluge.DataSource = usluga.PronadjiUsluguPoImenu();
+                dgvUsluge.Columns[0].Visible = false;
+                for (int i = 4; i < dgvUsluge.ColumnCount; i++)
+                {
+                    dgvUsluge.Columns[i].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
