@@ -40,7 +40,14 @@ namespace Vedrana
         }
 		public static List<jelo> PopisJelaPoTipu(string tip)
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var query = from j in context.jeloes
+                            where j.tipJela == tip
+                            select j;
+
+                return query.ToList();
+            }
         }
 	}
 }
