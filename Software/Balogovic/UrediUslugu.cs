@@ -32,5 +32,23 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnUnesi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _usluga.PromjenaCijeneUsluge(double.Parse(txtCijena.Text));
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
