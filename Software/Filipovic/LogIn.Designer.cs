@@ -64,6 +64,7 @@
             this.btnZaboravljenaLozinka.TabIndex = 12;
             this.btnZaboravljenaLozinka.Text = "Zaboravljena lozinka";
             this.btnZaboravljenaLozinka.UseVisualStyleBackColor = false;
+            this.btnZaboravljenaLozinka.Click += new System.EventHandler(this.btnZaboravljenaLozinka_Click);
             // 
             // label2
             // 
@@ -90,6 +91,7 @@
             this.btnPrijava.TabIndex = 10;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = false;
+            this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
             // label1
             // 

@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="evidencijaNjege">
+    <Key>
+      <PropertyRef Name="evidencijaNjegeID" />
+    </Key>
+    <Property Name="oib" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="imaUsluguId" Type="int" Nullable="false" />
+    <Property Name="datum" Type="datetime" />
+    <Property Name="napomena" Type="text" />
+    <Property Name="evidencijaNjegeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="imaUslugu">
+    <Key>
+      <PropertyRef Name="imaUsluguId" />
+    </Key>
+    <Property Name="imaUsluguId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="oib" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="uslugaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jelo">
+    <Key>
+      <PropertyRef Name="jeloId" />
+    </Key>
+    <Property Name="jeloId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="varchar" MaxLength="50" />
+    <Property Name="tipJela" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="jelovnik">
+    <Key>
+      <PropertyRef Name="jelovnikId" />
+    </Key>
+    <Property Name="jelovnikId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datum" Type="datetime" />
+    <Property Name="posebanJelovnik" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="korisnik">
+    <Key>
+      <PropertyRef Name="oib" />
+    </Key>
+    <Property Name="oib" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="brojSobe" Type="int" Nullable="false" />
+    <Property Name="alergije" Type="text" />
+    <Property Name="napomene" Type="text" />
+  </EntityType>
+  <EntityType Name="koristiProizvod">
+    <Key>
+      <PropertyRef Name="koristiProizvodID" />
+    </Key>
+    <Property Name="uslugaId" Type="int" Nullable="false" />
+    <Property Name="proizvodId" Type="int" Nullable="false" />
+    <Property Name="kolicina" Type="float" />
+    <Property Name="koristiProizvodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="narudzba">
+    <Key>
+      <PropertyRef Name="narudzbaId" />
+    </Key>
+    <Property Name="narudzbaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datum" Type="datetime" />
+  </EntityType>
+  <EntityType Name="osoba">
+    <Key>
+      <PropertyRef Name="oib" />
+    </Key>
+    <Property Name="oib" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ime" Type="varchar" MaxLength="50" />
+    <Property Name="prezime" Type="varchar" MaxLength="50" />
+    <Property Name="adresa" Type="varchar" MaxLength="100" />
+    <Property Name="kontakt" Type="varchar" MaxLength="50" />
+    <Property Name="datumRodjenja" Type="datetime" />
+    <Property Name="datumPocetka" Type="datetime" />
+    <Property Name="datumZavrsetka" Type="datetime" />
+    <Property Name="koronaPozitivan" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="proizvod">
+    <Key>
+      <PropertyRef Name="proizvodId" />
+    </Key>
+    <Property Name="proizvodId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="varchar" MaxLength="50" />
+    <Property Name="tip" Type="varchar" MaxLength="25" />
+    <Property Name="naSkladistu" Type="float" />
+  </EntityType>
+  <EntityType Name="seNalazi">
+    <Key>
+      <PropertyRef Name="seNalaziID" />
+    </Key>
+    <Property Name="jeloId" Type="int" Nullable="false" />
+    <Property Name="jelovnikId" Type="int" Nullable="false" />
+    <Property Name="seNalaziID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PI20_031_DB.dbo.seNarucuje' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="seNarucuje">
+    <Key>
+      <PropertyRef Name="proizvodId" />
+      <PropertyRef Name="narudzbaId" />
+      <PropertyRef Name="seNarucujeId" />
+    </Key>
+    <Property Name="proizvodId" Type="int" Nullable="false" />
+    <Property Name="narudzbaId" Type="int" Nullable="false" />
+    <Property Name="kolicina" Type="float" />
+    <Property Name="seNarucujeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="seSastoji">
+    <Key>
+      <PropertyRef Name="seSastojiID" />
+    </Key>
+    <Property Name="jeloId" Type="int" Nullable="false" />
+    <Property Name="proizvodId" Type="int" Nullable="false" />
+    <Property Name="kolicina" Type="float" />
+    <Property Name="seSastojiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="soba">
+    <Key>
+      <PropertyRef Name="brojSobe" />
+    </Key>
+    <Property Name="brojSobe" Type="int" Nullable="false" />
+    <Property Name="brojLežaja" Type="int" />
+    <Property Name="dioDoma" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="usluga">
+    <Key>
+      <PropertyRef Name="uslugaId" />
+    </Key>
+    <Property Name="uslugaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="varchar" MaxLength="100" />
+    <Property Name="cijena" Type="float" />
+    <Property Name="opis" Type="text" />
+  </EntityType>
+  <EntityType Name="zaposlenik">
+    <Key>
+      <PropertyRef Name="oib" />
+    </Key>
+    <Property Name="oib" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="lozinka" Type="varchar" MaxLength="50" />
+    <Property Name="uloga" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="evidencijaNjege_imaUslugu_imaUsluguId_fk">
+    <End Role="imaUslugu" Type="Self.imaUslugu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="evidencijaNjege" Type="Self.evidencijaNjege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="imaUslugu">
+        <PropertyRef Name="imaUsluguId" />
+      </Principal>
+      <Dependent Role="evidencijaNjege">
+        <PropertyRef Name="imaUsluguId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="evidencijaNjege_zaposlenik_oib_fk">
+    <End Role="zaposlenik" Type="Self.zaposlenik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="evidencijaNjege" Type="Self.evidencijaNjege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zaposlenik">
+        <PropertyRef Name="oib" />
+      </Principal>
+      <Dependent Role="evidencijaNjege">
+        <PropertyRef Name="oib" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="imaUslugu_korisnik_oib_fk">
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="imaUslugu" Type="Self.imaUslugu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="oib" />
+      </Principal>
+      <Dependent Role="imaUslugu">
+        <PropertyRef Name="oib" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="imaUslugu_usluga_uslugaId_fk">
+    <End Role="usluga" Type="Self.usluga" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="imaUslugu" Type="Self.imaUslugu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usluga">
+        <PropertyRef Name="uslugaId" />
+      </Principal>
+      <Dependent Role="imaUslugu">
+        <PropertyRef Name="uslugaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="korisnik_osoba_oib_fk">
+    <End Role="osoba" Type="Self.osoba" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="osoba">
+        <PropertyRef Name="oib" />
+      </Principal>
+      <Dependent Role="korisnik">
+        <PropertyRef Name="oib" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="korisnik_soba_brojSobe_fk">
+    <End Role="soba" Type="Self.soba" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="soba">
+        <PropertyRef Name="brojSobe" />
+      </Principal>
+      <Dependent Role="korisnik">
+        <PropertyRef Name="brojSobe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="koristiProizvod_proizvod_proizvodId_fk">
+    <End Role="proizvod" Type="Self.proizvod" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="koristiProizvod" Type="Self.koristiProizvod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proizvod">
+        <PropertyRef Name="proizvodId" />
+      </Principal>
+      <Dependent Role="koristiProizvod">
+        <PropertyRef Name="proizvodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="koristiProizvod_usluga_uslugaId_fk">
+    <End Role="usluga" Type="Self.usluga" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="koristiProizvod" Type="Self.koristiProizvod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usluga">
+        <PropertyRef Name="uslugaId" />
+      </Principal>
+      <Dependent Role="koristiProizvod">
+        <PropertyRef Name="uslugaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seNalazi_jelo_jeloId_fk">
+    <End Role="jelo" Type="Self.jelo" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seNalazi" Type="Self.seNalazi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jelo">
+        <PropertyRef Name="jeloId" />
+      </Principal>
+      <Dependent Role="seNalazi">
+        <PropertyRef Name="jeloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seNalazi_jelovnik_jelovnikId_fk">
+    <End Role="jelovnik" Type="Self.jelovnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seNalazi" Type="Self.seNalazi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jelovnik">
+        <PropertyRef Name="jelovnikId" />
+      </Principal>
+      <Dependent Role="seNalazi">
+        <PropertyRef Name="jelovnikId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seNarucuje_narudzba_narudzbaId_fk">
+    <End Role="narudzba" Type="Self.narudzba" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seNarucuje" Type="Self.seNarucuje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="narudzba">
+        <PropertyRef Name="narudzbaId" />
+      </Principal>
+      <Dependent Role="seNarucuje">
+        <PropertyRef Name="narudzbaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seNarucuje_proizvod_proizvodId_fk">
+    <End Role="proizvod" Type="Self.proizvod" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seNarucuje" Type="Self.seNarucuje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proizvod">
+        <PropertyRef Name="proizvodId" />
+      </Principal>
+      <Dependent Role="seNarucuje">
+        <PropertyRef Name="proizvodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seSastoji_jelo_jeloId_fk">
+    <End Role="jelo" Type="Self.jelo" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seSastoji" Type="Self.seSastoji" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jelo">
+        <PropertyRef Name="jeloId" />
+      </Principal>
+      <Dependent Role="seSastoji">
+        <PropertyRef Name="jeloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seSastoji_proizvod_proizvodId_fk">
+    <End Role="proizvod" Type="Self.proizvod" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="seSastoji" Type="Self.seSastoji" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proizvod">
+        <PropertyRef Name="proizvodId" />
+      </Principal>
+      <Dependent Role="seSastoji">
+        <PropertyRef Name="proizvodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zaposlenik_osoba_oib_fk">
+    <End Role="osoba" Type="Self.osoba" Multiplicity="1" />
+    <End Role="zaposlenik" Type="Self.zaposlenik" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="osoba">
+        <PropertyRef Name="oib" />
+      </Principal>
+      <Dependent Role="zaposlenik">
+        <PropertyRef Name="oib" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="evidencijaNjege" EntityType="Self.evidencijaNjege" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="imaUslugu" EntityType="Self.imaUslugu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jelo" EntityType="Self.jelo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jelovnik" EntityType="Self.jelovnik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="korisnik" EntityType="Self.korisnik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="koristiProizvod" EntityType="Self.koristiProizvod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="narudzba" EntityType="Self.narudzba" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="osoba" EntityType="Self.osoba" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="proizvod" EntityType="Self.proizvod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="seNalazi" EntityType="Self.seNalazi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="seSastoji" EntityType="Self.seSastoji" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="soba" EntityType="Self.soba" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usluga" EntityType="Self.usluga" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="zaposlenik" EntityType="Self.zaposlenik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="seNarucuje" EntityType="Self.seNarucuje" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [seNarucuje].[proizvodId] AS [proizvodId], 
+    [seNarucuje].[narudzbaId] AS [narudzbaId], 
+    [seNarucuje].[kolicina] AS [kolicina], 
+    [seNarucuje].[seNarucujeId] AS [seNarucujeId]
+    FROM [dbo].[seNarucuje] AS [seNarucuje]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="evidencijaNjege_imaUslugu_imaUsluguId_fk" Association="Self.evidencijaNjege_imaUslugu_imaUsluguId_fk">
+      <End Role="imaUslugu" EntitySet="imaUslugu" />
+      <End Role="evidencijaNjege" EntitySet="evidencijaNjege" />
+    </AssociationSet>
+    <AssociationSet Name="evidencijaNjege_zaposlenik_oib_fk" Association="Self.evidencijaNjege_zaposlenik_oib_fk">
+      <End Role="zaposlenik" EntitySet="zaposlenik" />
+      <End Role="evidencijaNjege" EntitySet="evidencijaNjege" />
+    </AssociationSet>
+    <AssociationSet Name="imaUslugu_korisnik_oib_fk" Association="Self.imaUslugu_korisnik_oib_fk">
+      <End Role="korisnik" EntitySet="korisnik" />
+      <End Role="imaUslugu" EntitySet="imaUslugu" />
+    </AssociationSet>
+    <AssociationSet Name="imaUslugu_usluga_uslugaId_fk" Association="Self.imaUslugu_usluga_uslugaId_fk">
+      <End Role="usluga" EntitySet="usluga" />
+      <End Role="imaUslugu" EntitySet="imaUslugu" />
+    </AssociationSet>
+    <AssociationSet Name="korisnik_osoba_oib_fk" Association="Self.korisnik_osoba_oib_fk">
+      <End Role="osoba" EntitySet="osoba" />
+      <End Role="korisnik" EntitySet="korisnik" />
+    </AssociationSet>
+    <AssociationSet Name="korisnik_soba_brojSobe_fk" Association="Self.korisnik_soba_brojSobe_fk">
+      <End Role="soba" EntitySet="soba" />
+      <End Role="korisnik" EntitySet="korisnik" />
+    </AssociationSet>
+    <AssociationSet Name="koristiProizvod_proizvod_proizvodId_fk" Association="Self.koristiProizvod_proizvod_proizvodId_fk">
+      <End Role="proizvod" EntitySet="proizvod" />
+      <End Role="koristiProizvod" EntitySet="koristiProizvod" />
+    </AssociationSet>
+    <AssociationSet Name="koristiProizvod_usluga_uslugaId_fk" Association="Self.koristiProizvod_usluga_uslugaId_fk">
+      <End Role="usluga" EntitySet="usluga" />
+      <End Role="koristiProizvod" EntitySet="koristiProizvod" />
+    </AssociationSet>
+    <AssociationSet Name="seNalazi_jelo_jeloId_fk" Association="Self.seNalazi_jelo_jeloId_fk">
+      <End Role="jelo" EntitySet="jelo" />
+      <End Role="seNalazi" EntitySet="seNalazi" />
+    </AssociationSet>
+    <AssociationSet Name="seNalazi_jelovnik_jelovnikId_fk" Association="Self.seNalazi_jelovnik_jelovnikId_fk">
+      <End Role="jelovnik" EntitySet="jelovnik" />
+      <End Role="seNalazi" EntitySet="seNalazi" />
+    </AssociationSet>
+    <AssociationSet Name="seNarucuje_narudzba_narudzbaId_fk" Association="Self.seNarucuje_narudzba_narudzbaId_fk">
+      <End Role="narudzba" EntitySet="narudzba" />
+      <End Role="seNarucuje" EntitySet="seNarucuje" />
+    </AssociationSet>
+    <AssociationSet Name="seNarucuje_proizvod_proizvodId_fk" Association="Self.seNarucuje_proizvod_proizvodId_fk">
+      <End Role="proizvod" EntitySet="proizvod" />
+      <End Role="seNarucuje" EntitySet="seNarucuje" />
+    </AssociationSet>
+    <AssociationSet Name="seSastoji_jelo_jeloId_fk" Association="Self.seSastoji_jelo_jeloId_fk">
+      <End Role="jelo" EntitySet="jelo" />
+      <End Role="seSastoji" EntitySet="seSastoji" />
+    </AssociationSet>
+    <AssociationSet Name="seSastoji_proizvod_proizvodId_fk" Association="Self.seSastoji_proizvod_proizvodId_fk">
+      <End Role="proizvod" EntitySet="proizvod" />
+      <End Role="seSastoji" EntitySet="seSastoji" />
+    </AssociationSet>
+    <AssociationSet Name="zaposlenik_osoba_oib_fk" Association="Self.zaposlenik_osoba_oib_fk">
+      <End Role="osoba" EntitySet="osoba" />
+      <End Role="zaposlenik" EntitySet="zaposlenik" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

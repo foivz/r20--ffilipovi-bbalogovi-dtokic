@@ -27,5 +27,6 @@ namespace Vedrana
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<evidencijaNjege> evidencijaNjeges { get; set; }
+        public virtual osoba osoba { get; set; }
     }
 }

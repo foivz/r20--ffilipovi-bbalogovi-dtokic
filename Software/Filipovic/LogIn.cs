@@ -16,5 +16,15 @@ namespace Vedrana.Filipovic
         {
             InitializeComponent();
         }
+
+        private void btnPrijava_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnZaboravljenaLozinka_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,5 +25,6 @@ namespace Vedrana
         public Nullable<byte> koronaPozitivan { get; set; }
     
         public virtual korisnik korisnik { get; set; }
+        public virtual zaposlenik zaposlenik { get; set; }
     }
 }

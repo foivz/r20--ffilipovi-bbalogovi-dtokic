@@ -60,19 +60,79 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Baza.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Baza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
     <Compile Include="Baza.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Baza.edmx</DependentUpon>
     </Compile>
+    <Compile Include="evidencijaNjege.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Filipovic\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filipovic\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filipovic\Zaposlenik.cs" />
     <Compile Include="GlavniMeni.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlavniMeni.Designer.cs">
       <DependentUpon>GlavniMeni.cs</DependentUpon>
     </Compile>
+    <Compile Include="imaUslugu.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="jelo.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="jelovnik.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="korisnik.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="koristiProizvod.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="narudzba.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="osoba.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="proizvod.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seNalazi.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="seNarucuje.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="seSastoji.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="soba.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usluga.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zaposlenik.cs">
+      <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Filipovic\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +167,12 @@
     <Content Include="Baza.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Baza.Context.cs</LastGenOutput>
+      <DependentUpon>Baza.edmx</DependentUpon>
+    </Content>
+    <Content Include="Baza.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Baza.edmx</DependentUpon>
+      <LastGenOutput>Baza.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
