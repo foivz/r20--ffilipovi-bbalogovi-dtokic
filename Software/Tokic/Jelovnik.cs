@@ -102,7 +102,30 @@ namespace Vedrana
         }
 		public static Tuple<List<jelo>, List<jelo>> DanasnjiJelovnik()
         {
-			throw new NotImplementedException();
+            using (var context = new Entities())
+            {
+                var danasnjiN = from j in context.jelovniks.AsEnumerable()
+                                where j.datum.Value.Date == DateTime.Now.Date
+                                && j.posebanJelovnik == Convert.ToByte(false)
+                                select j;
+                var danasnjiP = from j in context.jelovniks.AsEnumerable()
+                                where j.datum.Value.Date == DateTime.Now.Date
+                                && j.posebanJelovnik == Convert.ToByte(true)
+                                select j;
+                if (danasnjiN.Count() > 0 && danasnjiP.Count() > 0)
+                {
+                    jelovnik tempN = danasnjiN.First();
+                    jelovnik tempP = danasnjiP.First();
+                    var queryN = from se in context.seNalazis
+                                 where se.jelovnikId == tempN.jelovnikId
+                                 select se.jelo;
+                    var queryP = from se in context.seNalazis
+                                 where se.jelovnikId == tempP.jelovnikId
+                                 select se.jelo;
+                    return Tuple.Create(queryN.ToList(), queryP.ToList());
+                }
+                throw new Exception("Ne postoji današnji jelovnik!");
+            }
         }
 		public static Tuple<List<List<jelo>>, List<DateTime>, List<bool>> SviJelovnici()
         {
