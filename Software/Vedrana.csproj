@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Balogovic\EvidencijaUsluge.cs" />
+    <Compile Include="Balogovic\Korisnik.cs" />
     <Compile Include="Balogovic\Usluga.cs" />
     <Compile Include="Baza.Context.cs">
       <AutoGen>True</AutoGen>
