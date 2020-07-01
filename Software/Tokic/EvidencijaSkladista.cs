@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace Vedrana.Tokic
         public EvidencijaSkladista()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void EvidencijaSkladista_Load(object sender, EventArgs e)
@@ -45,6 +47,14 @@ namespace Vedrana.Tokic
         {
             Statistika.Statistika report = new Statistika.Statistika();
             report.ShowDialog();
+        }
+
+        private void EvidencijaSkladista_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
+            }
         }
     }
 }

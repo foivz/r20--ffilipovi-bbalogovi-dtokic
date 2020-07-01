@@ -205,6 +205,7 @@
             this.Name = "NovoJelo";
             this.Text = "NovoJelo";
             this.Load += new System.EventHandler(this.NovoJelo_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NovoJelo_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSastojci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

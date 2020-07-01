@@ -223,6 +223,7 @@
             this.Name = "IzradaJelovnika";
             this.Text = "IzradaJelovnika";
             this.Load += new System.EventHandler(this.IzradaJelovnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IzradaJelovnika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

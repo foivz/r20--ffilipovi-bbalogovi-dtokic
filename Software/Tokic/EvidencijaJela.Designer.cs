@@ -182,6 +182,7 @@
             this.Name = "EvidencijaJela";
             this.Text = "EvidencijaJela";
             this.Load += new System.EventHandler(this.EvidencijaJela_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EvidencijaJela_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

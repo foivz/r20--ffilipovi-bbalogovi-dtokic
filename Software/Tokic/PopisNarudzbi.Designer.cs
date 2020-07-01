@@ -85,6 +85,7 @@
             this.Name = "PopisNarudzbi";
             this.Text = "PopisNarudzbi";
             this.Load += new System.EventHandler(this.PopisNarudzbi_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PopisNarudzbi_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNarudzbe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
