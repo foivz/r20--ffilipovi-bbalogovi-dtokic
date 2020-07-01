@@ -162,6 +162,7 @@
             this.Name = "NoviProizvod";
             this.Text = "NoviProizvod";
             this.Load += new System.EventHandler(this.NoviProizvod_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NoviProizvod_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

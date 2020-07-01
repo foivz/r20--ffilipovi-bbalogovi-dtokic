@@ -210,6 +210,7 @@
             this.Name = "UredjivanjeJelovnika";
             this.Text = "UredjivanjeJelovnika";
             this.Load += new System.EventHandler(this.UredjivanjeJelovnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UredjivanjeJelovnika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

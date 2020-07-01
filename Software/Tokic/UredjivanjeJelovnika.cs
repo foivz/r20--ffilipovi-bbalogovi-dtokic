@@ -16,6 +16,7 @@ namespace Vedrana.Tokic
         public UredjivanjeJelovnika(jelovnik jel)
         {
             InitializeComponent();
+            this.KeyPreview = true;
             _jelovnik = jel;
         }
 
@@ -117,6 +118,14 @@ namespace Vedrana.Tokic
         private void btnOdustani_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void UredjivanjeJelovnika_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
+            }
         }
     }
 }

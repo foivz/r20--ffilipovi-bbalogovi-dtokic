@@ -338,6 +338,7 @@
             this.Name = "EvidencijaJelovnika";
             this.Text = "EvidencijaJelovnika";
             this.Load += new System.EventHandler(this.EvidencijaJelovnika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EvidencijaJelovnika_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJelovnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

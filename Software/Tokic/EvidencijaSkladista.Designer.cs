@@ -116,6 +116,7 @@
             this.Name = "EvidencijaSkladista";
             this.Text = "EvidencijaSkladista";
             this.Load += new System.EventHandler(this.EvidencijaSkladista_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EvidencijaSkladista_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkladiste)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
