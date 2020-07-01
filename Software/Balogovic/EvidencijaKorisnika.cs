@@ -118,5 +118,10 @@ namespace Vedrana.Balogovic
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void cbxFilter_CheckedChanged(object sender, EventArgs e)
+        {
+            OsvjeziPopis();
+        }
     }
 }

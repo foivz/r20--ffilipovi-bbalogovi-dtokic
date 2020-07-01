@@ -224,6 +224,7 @@
             this.cbxFilter.TabIndex = 44;
             this.cbxFilter.Text = "Prikaži bivše korisnike";
             this.cbxFilter.UseVisualStyleBackColor = true;
+            this.cbxFilter.CheckedChanged += new System.EventHandler(this.cbxFilter_CheckedChanged);
             // 
             // btnNoviKorisnik
             // 
