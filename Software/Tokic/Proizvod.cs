@@ -6,7 +6,14 @@ namespace Vedrana
 	{
 		public proizvod(string nnaziv, string ntip, double kolicina=0)
 		{
-			throw new NotImplementedException();
-		}
+            using (var context = new Entities())
+            {
+                naziv = nnaziv;
+                tip = ntip;
+                naSkladistu = kolicina;
+                context.proizvods.Add(this);
+                context.SaveChanges();
+            }
+        }
 	}
 }
