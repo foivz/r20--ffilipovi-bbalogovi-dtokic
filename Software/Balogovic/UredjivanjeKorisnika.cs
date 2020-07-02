@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace Vedrana.Balogovic
         {
             InitializeComponent();
             trenutniKornisnik = kor;
+            this.KeyPreview = true;
         }
 
         private void UredjivanjeKorisnika_Load(object sender, EventArgs e)
@@ -158,6 +160,13 @@ namespace Vedrana.Balogovic
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        private void UredjivanjeKorisnika_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
             }
         }
     }
