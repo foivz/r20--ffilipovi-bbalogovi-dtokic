@@ -42,24 +42,6 @@
     <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.13.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -76,57 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Balogovic\EvidencijaKorisnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\EvidencijaKorisnika.Designer.cs">
-      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\EvidencijaNjege.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\EvidencijaNjege.Designer.cs">
-      <DependentUpon>EvidencijaNjege.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\EvidencijaUsluge.cs" />
-    <Compile Include="Balogovic\EvidentiraneNjege.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\EvidentiraneNjege.Designer.cs">
-      <DependentUpon>EvidentiraneNjege.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\Korisnik.cs" />
-    <Compile Include="Balogovic\NovaUsluga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\NovaUsluga.Designer.cs">
-      <DependentUpon>NovaUsluga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\PopisUsluga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\PopisUsluga.Designer.cs">
-      <DependentUpon>PopisUsluga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\PrijemKorisnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\PrijemKorisnika.Designer.cs">
-      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\UrediUslugu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\UrediUslugu.Designer.cs">
-      <DependentUpon>UrediUslugu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\UredjivanjeKorisnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Balogovic\UredjivanjeKorisnika.Designer.cs">
-      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Balogovic\Usluga.cs" />
     <Compile Include="Baza.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -214,99 +145,14 @@
     <Compile Include="soba.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="Statistika\Statistika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Statistika\Statistika.Designer.cs">
-      <DependentUpon>Statistika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaJela.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaJela.Designer.cs">
-      <DependentUpon>EvidencijaJela.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaJelovnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaJelovnika.Designer.cs">
-      <DependentUpon>EvidencijaJelovnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaSkladista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\EvidencijaSkladista.Designer.cs">
-      <DependentUpon>EvidencijaSkladista.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\IzradaJelovnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\IzradaJelovnika.Designer.cs">
-      <DependentUpon>IzradaJelovnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\Jelo.cs" />
-    <Compile Include="Tokic\Jelovnik.cs" />
-    <Compile Include="Tokic\NoviProizvod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\NoviProizvod.Designer.cs">
-      <DependentUpon>NoviProizvod.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\NovoJelo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\NovoJelo.Designer.cs">
-      <DependentUpon>NovoJelo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\PopisNarudzbi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\PopisNarudzbi.Designer.cs">
-      <DependentUpon>PopisNarudzbi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tokic\Proizvod.cs" />
-    <Compile Include="Tokic\Skladiste.cs" />
-    <Compile Include="Tokic\UredjivanjeJelovnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tokic\UredjivanjeJelovnika.Designer.cs">
-      <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
-    </Compile>
     <Compile Include="usluga.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
     <Compile Include="zaposlenik.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="Filipovic\EvidencijaZaposlenika.resx">
       <DependentUpon>EvidencijaZaposlenika.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Balogovic\EvidencijaKorisnika.resx">
-      <DependentUpon>EvidencijaKorisnika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\EvidencijaNjege.resx">
-      <DependentUpon>EvidencijaNjege.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\EvidentiraneNjege.resx">
-      <DependentUpon>EvidentiraneNjege.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\NovaUsluga.resx">
-      <DependentUpon>NovaUsluga.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\PopisUsluga.resx">
-      <DependentUpon>PopisUsluga.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\PrijemKorisnika.resx">
-      <DependentUpon>PrijemKorisnika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\UrediUslugu.resx">
-      <DependentUpon>UrediUslugu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Balogovic\UredjivanjeKorisnika.resx">
-      <DependentUpon>UredjivanjeKorisnika.cs</DependentUpon>
->>>>>>> 693cf64cb8516c9df7d96e497d49470a35f0a9af
     </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -329,34 +175,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Statistika\Statistika.resx">
-      <DependentUpon>Statistika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Statistika\StatistikaReport.rdlc" />
-    <EmbeddedResource Include="Tokic\EvidencijaJela.resx">
-      <DependentUpon>EvidencijaJela.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\EvidencijaJelovnika.resx">
-      <DependentUpon>EvidencijaJelovnika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\EvidencijaSkladista.resx">
-      <DependentUpon>EvidencijaSkladista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\IzradaJelovnika.resx">
-      <DependentUpon>IzradaJelovnika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\NoviProizvod.resx">
-      <DependentUpon>NoviProizvod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\NovoJelo.resx">
-      <DependentUpon>NovoJelo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\PopisNarudzbi.resx">
-      <DependentUpon>PopisNarudzbi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tokic\UredjivanjeJelovnika.resx">
-      <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
-    </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Baza.Designer.cs</LastGenOutput>
@@ -365,8 +183,6 @@
       <DependentUpon>Baza.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\proizvod.datasource" />
-    <None Include="Properties\DataSources\seNarucuje.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -376,7 +192,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="StarackiDomVedranaHelp.chm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -391,19 +206,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Baza.edmx</DependentUpon>
       <LastGenOutput>Baza.cs</LastGenOutput>
-    </Content>
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

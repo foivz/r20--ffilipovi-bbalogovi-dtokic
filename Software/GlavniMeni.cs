@@ -7,9 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Vedrana.Balogovic;
 using Vedrana.Filipovic;
-using Vedrana.Tokic;
 
 namespace Vedrana
 {
@@ -102,14 +100,14 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
             aktivniMeniLbl.Text = "Korisnici";
             // otvori formu evidencije korisnika
-            otvoriFormu(new EvidencijaKorisnika(LogIn._zaposlenik));
+            // otvoriFormu();
         }
 
         private void uslugeBtn_Click(object sender, EventArgs e)
         {
             aktivniMeniLbl.Text = "Korisnici > Usluge";
             // otvori formu popisa usluga
-            otvoriFormu(new PopisUsluga());
+            // otvoriFormu();
         }
 
         private void skladisteBtn_Click(object sender, EventArgs e)
@@ -118,7 +116,7 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
             aktivniMeniLbl.Text = "Skladište";
             // otvori formu evidencije skladišta
-            otvoriFormu(new EvidencijaSkladista());
+            // otvoriFormu();
         }
 
         private void jelovniciBtn_Click(object sender, EventArgs e)
@@ -128,14 +126,14 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Utensils;
             aktivniMeniLbl.Text = "Jelovnici";
             // otvori formu evidencije jelovnika
-            otvoriFormu(new EvidencijaJelovnika());
+            // otvoriFormu();
         }
 
         private void jelaBtn_Click(object sender, EventArgs e)
         {
             aktivniMeniLbl.Text = "Jelovnici > Jela";
             // otvori formu evidencije jela
-            otvoriFormu(new EvidencijaJela());
+            // otvoriFormu();
         }
 
         private void userBtn_Click(object sender, EventArgs e)
