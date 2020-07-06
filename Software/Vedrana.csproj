@@ -76,6 +76,12 @@
     <Compile Include="evidencijaNjege.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <Compile Include="Filipovic\EvidencijaZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filipovic\EvidencijaZaposlenika.Designer.cs">
+      <DependentUpon>EvidencijaZaposlenika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filipovic\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="zaposlenik.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Filipovic\EvidencijaZaposlenika.resx">
+      <DependentUpon>EvidencijaZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
