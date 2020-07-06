@@ -46,15 +46,7 @@ namespace Vedrana.Filipovic
 
         private void btnZaboravljenaLozinka_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ZaboravljenaLozinka forma = new ZaboravljenaLozinka();
-                forma.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
         }
     }
 }
