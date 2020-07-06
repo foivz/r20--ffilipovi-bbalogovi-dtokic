@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vedrana.Balogovic;
 using Vedrana.Filipovic;
 using Vedrana.Tokic;
 
@@ -101,14 +102,14 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
             aktivniMeniLbl.Text = "Korisnici";
             // otvori formu evidencije korisnika
-            // otvoriFormu();
+            otvoriFormu(new EvidencijaKorisnika(LogIn._zaposlenik));
         }
 
         private void uslugeBtn_Click(object sender, EventArgs e)
         {
             aktivniMeniLbl.Text = "Korisnici > Usluge";
             // otvori formu popisa usluga
-            // otvoriFormu();
+            otvoriFormu(new PopisUsluga());
         }
 
         private void skladisteBtn_Click(object sender, EventArgs e)

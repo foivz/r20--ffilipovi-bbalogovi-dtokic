@@ -70,6 +70,7 @@
             this.btnUnesi.TabIndex = 40;
             this.btnUnesi.Text = "Unesi";
             this.btnUnesi.UseVisualStyleBackColor = false;
+            this.btnUnesi.Click += new System.EventHandler(this.btnUnesi_Click);
             // 
             // btnOdustani
             // 
@@ -84,6 +85,7 @@
             this.btnOdustani.TabIndex = 39;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // txtOpis
             // 
@@ -159,6 +161,7 @@
             this.btnDodajSastojak.TabIndex = 32;
             this.btnDodajSastojak.Text = "Dodaj proizvod";
             this.btnDodajSastojak.UseVisualStyleBackColor = false;
+            this.btnDodajSastojak.Click += new System.EventHandler(this.btnDodajSastojak_Click);
             // 
             // txtKolicina
             // 
@@ -232,6 +235,7 @@
             this.Controls.Add(this.dgvProizvodi);
             this.Name = "NovaUsluga";
             this.Text = "NovaUsluga";
+            this.Load += new System.EventHandler(this.NovaUsluga_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProizvodi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

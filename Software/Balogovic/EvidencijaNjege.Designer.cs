@@ -128,6 +128,7 @@
             this.btnEvidentiraj.TabIndex = 132;
             this.btnEvidentiraj.Text = "Evidentiraj uslugu";
             this.btnEvidentiraj.UseVisualStyleBackColor = false;
+            this.btnEvidentiraj.Click += new System.EventHandler(this.btnEvidentiraj_Click);
             // 
             // label9
             // 
@@ -187,6 +188,7 @@
             this.btnOdustani.TabIndex = 127;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // bntUnesi
             // 
@@ -201,6 +203,7 @@
             this.bntUnesi.TabIndex = 126;
             this.bntUnesi.Text = "Unesi evidencije";
             this.bntUnesi.UseVisualStyleBackColor = false;
+            this.bntUnesi.Click += new System.EventHandler(this.bntUnesi_Click);
             // 
             // dtpDatumRodjenja
             // 
@@ -406,6 +409,7 @@
             this.Controls.Add(this.txtOIB);
             this.Name = "EvidencijaNjege";
             this.Text = "EvidencijaNjege";
+            this.Load += new System.EventHandler(this.EvidencijaNjege_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvidentiraneUsluge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPopisUsluga)).EndInit();
             this.ResumeLayout(false);

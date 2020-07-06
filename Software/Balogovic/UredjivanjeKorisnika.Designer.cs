@@ -82,6 +82,7 @@
             this.btnOdustani.TabIndex = 175;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // label12
             // 
@@ -285,6 +286,7 @@
             this.btnUkloniUslugu.TabIndex = 155;
             this.btnUkloniUslugu.Text = "Ukloni uslugu";
             this.btnUkloniUslugu.UseVisualStyleBackColor = false;
+            this.btnUkloniUslugu.Click += new System.EventHandler(this.btnUkloniUslugu_Click);
             // 
             // btnDodajUslugu
             // 
@@ -299,6 +301,7 @@
             this.btnDodajUslugu.TabIndex = 154;
             this.btnDodajUslugu.Text = "Dodaj uslugu";
             this.btnDodajUslugu.UseVisualStyleBackColor = false;
+            this.btnDodajUslugu.Click += new System.EventHandler(this.btnDodajUslugu_Click);
             // 
             // label10
             // 
@@ -344,6 +347,7 @@
             this.bntUnesi.TabIndex = 150;
             this.bntUnesi.Text = "Unesi korisničke podatke";
             this.bntUnesi.UseVisualStyleBackColor = false;
+            this.bntUnesi.Click += new System.EventHandler(this.bntUnesi_Click);
             // 
             // UredjivanjeKorisnika
             // 
@@ -379,6 +383,7 @@
             this.Controls.Add(this.bntUnesi);
             this.Name = "UredjivanjeKorisnika";
             this.Text = "UredjivanjeKorisnika";
+            this.Load += new System.EventHandler(this.UredjivanjeKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPopisUsluga)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

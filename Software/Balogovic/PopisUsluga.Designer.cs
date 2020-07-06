@@ -60,6 +60,7 @@
             this.btnObrisiUslugu.TabIndex = 91;
             this.btnObrisiUslugu.Text = "Obrisi uslugu";
             this.btnObrisiUslugu.UseVisualStyleBackColor = false;
+            this.btnObrisiUslugu.Click += new System.EventHandler(this.btnObrisiUslugu_Click);
             // 
             // btnUrediUslugu
             // 
@@ -74,6 +75,7 @@
             this.btnUrediUslugu.TabIndex = 90;
             this.btnUrediUslugu.Text = "Uredi uslugu";
             this.btnUrediUslugu.UseVisualStyleBackColor = false;
+            this.btnUrediUslugu.Click += new System.EventHandler(this.btnUrediUslugu_Click);
             // 
             // btnNovaUsluga
             // 
@@ -88,6 +90,7 @@
             this.btnNovaUsluga.TabIndex = 89;
             this.btnNovaUsluga.Text = "Nova usluga";
             this.btnNovaUsluga.UseVisualStyleBackColor = false;
+            this.btnNovaUsluga.Click += new System.EventHandler(this.btnNovaUsluga_Click);
             // 
             // dgvUsluge
             // 

@@ -115,6 +115,7 @@
             this.btnEvidentiraneNjege.TabIndex = 52;
             this.btnEvidentiraneNjege.Text = "Evidentirane njege";
             this.btnEvidentiraneNjege.UseVisualStyleBackColor = false;
+            this.btnEvidentiraneNjege.Click += new System.EventHandler(this.btnEvidentiraneNjege_Click);
             // 
             // btnEvidentirajNjegu
             // 
@@ -129,6 +130,7 @@
             this.btnEvidentirajNjegu.TabIndex = 51;
             this.btnEvidentirajNjegu.Text = "Evidentiraj njegu";
             this.btnEvidentirajNjegu.UseVisualStyleBackColor = false;
+            this.btnEvidentirajNjegu.Click += new System.EventHandler(this.btnEvidentirajNjegu_Click);
             // 
             // btnUrediKorisnika
             // 
@@ -143,6 +145,7 @@
             this.btnUrediKorisnika.TabIndex = 50;
             this.btnUrediKorisnika.Text = "Uredi korisnika";
             this.btnUrediKorisnika.UseVisualStyleBackColor = false;
+            this.btnUrediKorisnika.Click += new System.EventHandler(this.btnUrediKorisnika_Click);
             // 
             // btnMakniFiltere
             // 
@@ -157,6 +160,7 @@
             this.btnMakniFiltere.TabIndex = 49;
             this.btnMakniFiltere.Text = "Makni filtere";
             this.btnMakniFiltere.UseVisualStyleBackColor = false;
+            this.btnMakniFiltere.Click += new System.EventHandler(this.btnMakniFiltere_Click);
             // 
             // btnFiltriraj
             // 
@@ -171,6 +175,7 @@
             this.btnFiltriraj.TabIndex = 48;
             this.btnFiltriraj.Text = "Filtriraj";
             this.btnFiltriraj.UseVisualStyleBackColor = false;
+            this.btnFiltriraj.Click += new System.EventHandler(this.btnFiltriraj_Click);
             // 
             // txtPrezime
             // 
@@ -204,6 +209,7 @@
             this.btnUkloni.TabIndex = 45;
             this.btnUkloni.Text = "Ukloni korisnika";
             this.btnUkloni.UseVisualStyleBackColor = false;
+            this.btnUkloni.Click += new System.EventHandler(this.btnUkloni_Click);
             // 
             // cbxFilter
             // 
@@ -219,6 +225,7 @@
             this.cbxFilter.TabIndex = 44;
             this.cbxFilter.Text = "Prikaži bivše korisnike";
             this.cbxFilter.UseVisualStyleBackColor = true;
+            this.cbxFilter.CheckedChanged += new System.EventHandler(this.cbxFilter_CheckedChanged);
             // 
             // btnNoviKorisnik
             // 
@@ -233,6 +240,7 @@
             this.btnNoviKorisnik.TabIndex = 43;
             this.btnNoviKorisnik.Text = "Novi korisnik";
             this.btnNoviKorisnik.UseVisualStyleBackColor = false;
+            this.btnNoviKorisnik.Click += new System.EventHandler(this.btnNoviKorisnik_Click);
             // 
             // dgvKorisnici
             // 
@@ -268,6 +276,7 @@
             this.Controls.Add(this.dgvKorisnici);
             this.Name = "EvidencijaKorisnika";
             this.Text = "EvidencijaKorisnika";
+            this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
