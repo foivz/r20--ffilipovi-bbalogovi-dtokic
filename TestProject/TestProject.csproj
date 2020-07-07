@@ -59,6 +59,7 @@
     <Compile Include="TestoviTokic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestoviBalogovic.cs" />
+    <Compile Include="TestoviFilipovic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
