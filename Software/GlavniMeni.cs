@@ -94,7 +94,7 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.UserNurse;
             aktivniMeniLbl.Text = "Zaposlenici";
             // otvori formu evidencije zaposlenika
-            // otvoriFormu();
+            otvoriFormu(new EvidencijaZaposlenika());
         }
 
         private void korisniciBtn_Click(object sender, EventArgs e)
