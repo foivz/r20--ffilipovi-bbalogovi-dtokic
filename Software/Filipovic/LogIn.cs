@@ -35,7 +35,7 @@ namespace Vedrana.Filipovic
                 else
                 {
                     txtSifra.Text = "";
-                    MessageBox.Show("Krivi podaci");
+                    MessageBox.Show("Krivo uneseni podaci! Molimo pokušajte ponovno.");
                 }
             }
             catch (Exception ex)
@@ -46,7 +46,15 @@ namespace Vedrana.Filipovic
 
         private void btnZaboravljenaLozinka_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                ZaboravljenaLozinka forma = new ZaboravljenaLozinka();
+                forma.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

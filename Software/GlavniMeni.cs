@@ -38,6 +38,8 @@ namespace Vedrana
             korisniciPnl.Visible = false;
             jelovniciPnl.Visible = false;
             userPnl.Visible = false;
+
+            otvoriFormu(new Pocetna());
         }
 
         private void sakrijPanel()
