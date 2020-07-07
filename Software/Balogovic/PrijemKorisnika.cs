@@ -129,7 +129,8 @@ namespace Vedrana.Balogovic
                         txtNapomene.Text);
                     context.SaveChanges();
 
-                    //ugovor
+                    Ugovor.Ugovor report = new Ugovor.Ugovor(txtOIB.Text, txtIme.Text + " " + txtPrezime.Text);
+                    report.ShowDialog();
 
                 }
                 Close();
