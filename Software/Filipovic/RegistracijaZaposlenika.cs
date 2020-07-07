@@ -21,7 +21,7 @@ namespace Vedrana.Filipovic
 
         private void RegistracijaZaposlenika_Load(object sender, EventArgs e)
         {
-            cmbUloga.Items.Add("Admin");
+            cmbUloga.Items.Add("Administrator");
             cmbUloga.Items.Add("Kuhar");
             cmbUloga.Items.Add("Njegovatelj");
         }

@@ -24,7 +24,7 @@ namespace Vedrana.Filipovic
             try
             {
                 zaposlenik.ZaboravljenaLozinka(txtEmail.Text, txtOIB.Text);
-                MessageBox.Show("Lozinka je uspješno resetirana.");
+                MessageBox.Show("Nova lozinka je poslana na unesenu e-mail adresu.");
                 this.Close();
             }
             catch (Exception ex)
