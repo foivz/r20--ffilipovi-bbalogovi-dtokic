@@ -313,3 +313,10 @@ C:\Users\Branimir\Source\Repos\r20--ffilipovi-bbalogovi-dtokic2\Software\obj\Deb
 C:\Users\Branimir\Source\Repos\r20--ffilipovi-bbalogovi-dtokic2\Software\bin\Debug\Vedrana.exe.config
 C:\Users\Branimir\Source\Repos\r20--ffilipovi-bbalogovi-dtokic2\Software\bin\Debug\Vedrana.exe
 C:\Users\Branimir\Source\Repos\r20--ffilipovi-bbalogovi-dtokic2\Software\bin\Debug\Vedrana.pdb
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\Lib.dll
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\Lib.pdb
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.EvidencijaZaposlenika.resources
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.NovaLozinka.resources
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.RegistracijaZaposlenika.resources
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.ZaboravljenaLozinka.resources
+C:\Users\Danijel\Source\Repos\foivz\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Ugovor.Ugovor.resources

@@ -285,6 +285,12 @@
     <Compile Include="Tokic\UredjivanjeJelovnika.Designer.cs">
       <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ugovor\Ugovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugovor\Ugovor.Designer.cs">
+      <DependentUpon>Ugovor.cs</DependentUpon>
+    </Compile>
     <Compile Include="usluga.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
@@ -372,6 +378,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tokic\UredjivanjeJelovnika.resx">
       <DependentUpon>UredjivanjeJelovnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugovor\UgovorReport.rdlc" />
+    <EmbeddedResource Include="Ugovor\Ugovor.resx">
+      <DependentUpon>Ugovor.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
