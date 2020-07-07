@@ -78,7 +78,16 @@ namespace Vedrana.Filipovic
 
         private void btnNoviZaposlenik_Click(object sender, EventArgs e)
         {
-            // otvori formu dodavanja zaposlenika
+            try
+            {
+                RegistracijaZaposlenika forma = new RegistracijaZaposlenika();
+                forma.ShowDialog();
+                OsvjeziPopis();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnOtpusti_Click(object sender, EventArgs e)

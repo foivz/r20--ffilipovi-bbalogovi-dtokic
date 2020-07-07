@@ -157,6 +157,12 @@
     <Compile Include="Filipovic\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Filipovic\RegistracijaZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filipovic\RegistracijaZaposlenika.Designer.cs">
+      <DependentUpon>RegistracijaZaposlenika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Filipovic\ZaboravljenaLozinka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filipovic\RegistracijaZaposlenika.resx">
+      <DependentUpon>RegistracijaZaposlenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filipovic\ZaboravljenaLozinka.resx">
       <DependentUpon>ZaboravljenaLozinka.cs</DependentUpon>

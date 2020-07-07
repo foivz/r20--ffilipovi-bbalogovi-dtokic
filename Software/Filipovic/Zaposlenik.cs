@@ -10,6 +10,56 @@ namespace Vedrana
 {
     public partial class zaposlenik : osoba
     {
+        public zaposlenik(string nemail, string noib, string nime, string nprezime, string nadresa, string nkontakt,
+            DateTime ndatumRodjenja, string nuloga)
+        {
+            email = nemail;
+            oib = noib;
+            ime = nime;
+            prezime = nprezime;
+            adresa = nadresa;
+            kontakt = nkontakt;
+            datumRodjenja = ndatumRodjenja;
+            uloga = nuloga;
+            datumPocetka = DateTime.Now;
+            datumZavrsetka = null;
+
+            using (var context = new Entities())
+            {
+                osoba novaOsoba = new osoba();
+                novaOsoba.oib = noib;
+                novaOsoba.ime = nime;
+                novaOsoba.prezime = nprezime;
+                novaOsoba.adresa = nadresa;
+                novaOsoba.kontakt = nkontakt;
+                novaOsoba.datumRodjenja = ndatumRodjenja;
+                novaOsoba.datumPocetka = DateTime.Now;
+                novaOsoba.datumZavrsetka = null;
+                novaOsoba.koronaPozitivan = 0;
+                context.osobas.Add(novaOsoba);
+                context.SaveChanges();
+            }
+
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var stringChars = new char[8];
+            var random = new Random();
+
+            for (int i = 0; i < stringChars.Length; i++)
+            {
+                stringChars[i] = chars[random.Next(chars.Length)];
+            }
+
+            var finalString = new String(stringChars);
+
+            lozinka = finalString;
+
+            SlanjeMaila.PosaljiMail(nemail, "Registracija", $"Pozdrav {ime}!\n" +
+                $"Administrator vas je uspješno registrirao te od sada možete koristiti aplikaciju Dom \"Vedrana\".\n" +
+                $"Vaši podaci za prijavu glase:\n" +
+                $"E-mail: {nemail}\n" +
+                $"Lozinka: {finalString}");
+        }
+
         public static zaposlenik Autenfikacija(string email, string sifra)
         {
             using (var context = new Entities())
