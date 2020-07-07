@@ -19,12 +19,21 @@ namespace Vedrana.Filipovic
 
         private void btnNovaLozinka_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                zaposlenik.ZaboravljenaLozinka(txtEmail.Text, txtOIB.Text);
+                MessageBox.Show("Lozinka je uspješno resetirana.");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

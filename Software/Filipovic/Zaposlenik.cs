@@ -23,5 +23,36 @@ namespace Vedrana
                     return null;
             }
         }
+
+        public static void ZaboravljenaLozinka(string email, string oib)
+        {
+            using (var context = new Entities())
+            {
+                var user = from zaposlenik in context.zaposleniks
+                           where zaposlenik.email == email && zaposlenik.oib == oib
+                           && zaposlenik.osoba.datumZavrsetka == null
+                           select zaposlenik;
+
+                var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                var stringChars = new char[8];
+                var random = new Random();
+
+                for (int i = 0; i < stringChars.Length; i++)
+                {
+                    stringChars[i] = chars[random.Next(chars.Length)];
+                }
+
+                var finalString = new String(stringChars);
+
+                if (user.Count() > 0)
+                {
+                    user.First<zaposlenik>().lozinka = finalString;
+                    context.SaveChanges();
+                    // potrebna implementacija slanja maila
+                }
+                else
+                    throw new Exception("Pogrešno upisani podaci. Molimo pokušajte opet.");
+            }
+        }
     }
 }

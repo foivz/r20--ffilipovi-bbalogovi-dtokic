@@ -35,7 +35,7 @@ namespace Vedrana.Filipovic
                 else
                 {
                     txtSifra.Text = "";
-                    MessageBox.Show("Krivo uneseni podaci! Molimo pokušajte ponovno.");
+                    MessageBox.Show("Krivo uneseni podaci. Molimo pokušajte ponovno.");
                 }
             }
             catch (Exception ex)
