@@ -137,6 +137,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ZaboravljenaLozinka";
             this.Text = "Zaboravljena lozinka";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ZaboravljenaLozinka_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace Vedrana.Filipovic
         public ZaboravljenaLozinka()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void btnNovaLozinka_Click(object sender, EventArgs e)
@@ -34,6 +36,14 @@ namespace Vedrana.Filipovic
         private void btnOdustani_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ZaboravljenaLozinka_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                Help.ShowHelp(this, Path.GetFullPath("StarackiDomVedranaHelp.chm"));
+            }
         }
     }
 }

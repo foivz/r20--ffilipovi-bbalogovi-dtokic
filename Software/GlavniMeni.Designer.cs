@@ -385,6 +385,7 @@
             this.Name = "GlavniMeni";
             this.Text = "Dom \"Vedrana\"";
             this.Load += new System.EventHandler(this.GlavniMeni_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GlavniMeni_KeyDown);
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

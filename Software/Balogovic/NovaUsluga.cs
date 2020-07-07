@@ -94,6 +94,7 @@ namespace Vedrana.Balogovic
         {
             Close();
         }
+
         private void NovaUsluga_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.ToString() == "F1")

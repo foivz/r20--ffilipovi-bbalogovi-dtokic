@@ -75,6 +75,7 @@ namespace Vedrana.Balogovic
         {
             Close();
         }
+
         private void EvidentiraneNjege_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.ToString() == "F1")

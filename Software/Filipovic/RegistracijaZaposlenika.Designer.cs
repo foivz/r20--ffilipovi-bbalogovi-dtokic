@@ -77,7 +77,7 @@
             // 
             this.txtAdresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtAdresa.Location = new System.Drawing.Point(160, 159);
-            this.txtAdresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAdresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(154, 19);
             this.txtAdresa.TabIndex = 138;
@@ -86,7 +86,7 @@
             // 
             this.dtpDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.dtpDatumRodjenja.Location = new System.Drawing.Point(160, 227);
-            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDatumRodjenja.Name = "dtpDatumRodjenja";
             this.dtpDatumRodjenja.Size = new System.Drawing.Size(154, 19);
             this.dtpDatumRodjenja.TabIndex = 137;
@@ -119,7 +119,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtEmail.Location = new System.Drawing.Point(160, 260);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(154, 19);
             this.txtEmail.TabIndex = 131;
@@ -152,7 +152,7 @@
             // 
             this.txtKontakt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtKontakt.Location = new System.Drawing.Point(160, 195);
-            this.txtKontakt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKontakt.Margin = new System.Windows.Forms.Padding(2);
             this.txtKontakt.Name = "txtKontakt";
             this.txtKontakt.Size = new System.Drawing.Size(154, 19);
             this.txtKontakt.TabIndex = 128;
@@ -173,7 +173,7 @@
             // 
             this.txtPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtPrezime.Location = new System.Drawing.Point(160, 127);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrezime.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(154, 19);
             this.txtPrezime.TabIndex = 126;
@@ -194,7 +194,7 @@
             // 
             this.txtIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtIme.Location = new System.Drawing.Point(160, 93);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIme.Margin = new System.Windows.Forms.Padding(2);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(154, 19);
             this.txtIme.TabIndex = 124;
@@ -215,7 +215,7 @@
             // 
             this.txtOIB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtOIB.Location = new System.Drawing.Point(160, 58);
-            this.txtOIB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOIB.Margin = new System.Windows.Forms.Padding(2);
             this.txtOIB.Name = "txtOIB";
             this.txtOIB.Size = new System.Drawing.Size(154, 19);
             this.txtOIB.TabIndex = 122;
@@ -227,7 +227,7 @@
             this.btnOdustani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnOdustani.Location = new System.Drawing.Point(48, 400);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(264, 32);
             this.btnOdustani.TabIndex = 121;
@@ -242,7 +242,7 @@
             this.btnRegistriraj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistriraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnRegistriraj.Location = new System.Drawing.Point(48, 348);
-            this.btnRegistriraj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistriraj.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistriraj.Name = "btnRegistriraj";
             this.btnRegistriraj.Size = new System.Drawing.Size(264, 32);
             this.btnRegistriraj.TabIndex = 120;
@@ -254,7 +254,7 @@
             // 
             this.cmbUloga.FormattingEnabled = true;
             this.cmbUloga.Location = new System.Drawing.Point(159, 293);
-            this.cmbUloga.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbUloga.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUloga.Name = "cmbUloga";
             this.cmbUloga.Size = new System.Drawing.Size(154, 21);
             this.cmbUloga.TabIndex = 141;
@@ -284,10 +284,11 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnRegistriraj);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistracijaZaposlenika";
             this.Text = "Registracija zaposlenika";
             this.Load += new System.EventHandler(this.RegistracijaZaposlenika_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RegistracijaZaposlenika_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

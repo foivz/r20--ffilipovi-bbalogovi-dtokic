@@ -44,7 +44,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -58,7 +58,7 @@
             this.btnZaboravljenaLozinka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZaboravljenaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnZaboravljenaLozinka.Location = new System.Drawing.Point(19, 305);
-            this.btnZaboravljenaLozinka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnZaboravljenaLozinka.Margin = new System.Windows.Forms.Padding(2);
             this.btnZaboravljenaLozinka.Name = "btnZaboravljenaLozinka";
             this.btnZaboravljenaLozinka.Size = new System.Drawing.Size(227, 28);
             this.btnZaboravljenaLozinka.TabIndex = 12;
@@ -85,7 +85,7 @@
             this.btnPrijava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnPrijava.Location = new System.Drawing.Point(19, 264);
-            this.btnPrijava.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrijava.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrijava.Name = "btnPrijava";
             this.btnPrijava.Size = new System.Drawing.Size(227, 28);
             this.btnPrijava.TabIndex = 10;
@@ -109,7 +109,7 @@
             // 
             this.txtSifra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtSifra.Location = new System.Drawing.Point(86, 221);
-            this.txtSifra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSifra.Margin = new System.Windows.Forms.Padding(2);
             this.txtSifra.Name = "txtSifra";
             this.txtSifra.Size = new System.Drawing.Size(161, 19);
             this.txtSifra.TabIndex = 8;
@@ -118,7 +118,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.txtEmail.Location = new System.Drawing.Point(86, 189);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 19);
             this.txtEmail.TabIndex = 7;
@@ -136,9 +136,10 @@
             this.Controls.Add(this.txtSifra);
             this.Controls.Add(this.txtEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LogIn";
             this.Text = "Prijava";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LogIn_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -132,6 +132,7 @@ namespace Vedrana.Balogovic
         {
             Close();
         }
+
         private void EvidencijaNjege_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.ToString() == "F1")
