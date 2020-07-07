@@ -234,6 +234,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EvidencijaZaposlenika";
             this.Text = "Evidencija zaposlenika";
+            this.Load += new System.EventHandler(this.EvidencijaZaposlenika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

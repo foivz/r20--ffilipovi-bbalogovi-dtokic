@@ -55,5 +55,36 @@ namespace Vedrana
                     throw new Exception("Pogrešno upisani podaci. Molimo pokušajte opet.");
             }
         }
+
+        public static IEnumerable<object> PretragaZaposlenika(bool bivsi, string ime = "", string prezime = "")
+        {
+            using (var context = new Entities())
+            {
+                var lista = from z in context.zaposleniks
+                            where (bivsi ? z.osoba.datumZavrsetka != null : z.osoba.datumZavrsetka == null)
+                            && (ime == "" ? true : z.osoba.ime.ToLower() == ime.ToLower())
+                            && (prezime == "" ? true : z.osoba.prezime.ToLower() == prezime.ToLower())
+                            select new
+                            {
+                                z.oib,
+                                z.osoba.ime,
+                                z.osoba.prezime,
+                                z.email,
+                                z.uloga,
+                                z.osoba.adresa,
+                                z.osoba.kontakt,
+                                z.osoba.datumRodjenja,
+                                z.osoba.datumPocetka,
+                                z.osoba.datumZavrsetka
+                            };
+
+                return lista.ToList();
+            }
+        }
+
+        public void OtpustiZaposlenika(zaposlenik zaposlenik)
+        {
+            zaposlenik.osoba.datumZavrsetka = DateTime.Now;
+        }
     }
 }
