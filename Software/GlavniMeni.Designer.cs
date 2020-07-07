@@ -382,6 +382,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.formPanel);
             this.Controls.Add(this.sideNavPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GlavniMeni";
             this.Text = "Dom \"Vedrana\"";
             this.Load += new System.EventHandler(this.GlavniMeni_Load);

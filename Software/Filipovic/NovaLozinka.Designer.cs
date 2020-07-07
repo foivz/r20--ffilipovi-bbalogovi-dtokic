@@ -43,7 +43,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(260, 169);
+            this.label4.Location = new System.Drawing.Point(260, 200);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 20);
@@ -56,7 +56,7 @@
             this.btnPromjeni.FlatAppearance.BorderSize = 0;
             this.btnPromjeni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPromjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnPromjeni.Location = new System.Drawing.Point(265, 320);
+            this.btnPromjeni.Location = new System.Drawing.Point(265, 351);
             this.btnPromjeni.Margin = new System.Windows.Forms.Padding(2);
             this.btnPromjeni.Name = "btnPromjeni";
             this.btnPromjeni.Size = new System.Drawing.Size(277, 32);
@@ -70,7 +70,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(261, 270);
+            this.label3.Location = new System.Drawing.Point(261, 301);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 18);
@@ -80,7 +80,7 @@
             // txtPonovljena
             // 
             this.txtPonovljena.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.txtPonovljena.Location = new System.Drawing.Point(406, 268);
+            this.txtPonovljena.Location = new System.Drawing.Point(406, 299);
             this.txtPonovljena.Margin = new System.Windows.Forms.Padding(2);
             this.txtPonovljena.Name = "txtPonovljena";
             this.txtPonovljena.Size = new System.Drawing.Size(137, 19);
@@ -91,7 +91,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(261, 239);
+            this.label2.Location = new System.Drawing.Point(261, 270);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 18);
@@ -101,7 +101,7 @@
             // txtNovaLozinka
             // 
             this.txtNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.txtNovaLozinka.Location = new System.Drawing.Point(406, 237);
+            this.txtNovaLozinka.Location = new System.Drawing.Point(406, 268);
             this.txtNovaLozinka.Margin = new System.Windows.Forms.Padding(2);
             this.txtNovaLozinka.Name = "txtNovaLozinka";
             this.txtNovaLozinka.Size = new System.Drawing.Size(137, 19);
@@ -112,7 +112,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(261, 209);
+            this.label1.Location = new System.Drawing.Point(261, 240);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 18);
@@ -122,7 +122,7 @@
             // txtStaraLozinka
             // 
             this.txtStaraLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.txtStaraLozinka.Location = new System.Drawing.Point(406, 207);
+            this.txtStaraLozinka.Location = new System.Drawing.Point(406, 238);
             this.txtStaraLozinka.Margin = new System.Windows.Forms.Padding(2);
             this.txtStaraLozinka.Name = "txtStaraLozinka";
             this.txtStaraLozinka.Size = new System.Drawing.Size(137, 19);
