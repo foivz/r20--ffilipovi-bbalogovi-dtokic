@@ -207,3 +207,5 @@ C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.csproj.CopyComplete
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.exe
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.pdb
+C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\Lib.dll
+C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\Lib.pdb
