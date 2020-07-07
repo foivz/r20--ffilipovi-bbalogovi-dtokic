@@ -106,6 +106,19 @@ namespace Vedrana
             }
         }
 
+        public void PromjenaLozinke(string sifra)
+        {
+            using (var context = new Entities())
+            {
+                this.lozinka = sifra;
+                var user = from z in context.zaposleniks
+                           where z.oib == this.oib
+                           select z;
+                user.First().lozinka = sifra;
+                context.SaveChanges();
+            }
+        }
+
         public static IEnumerable<object> PretragaZaposlenika(bool bivsi, string ime = "", string prezime = "")
         {
             using (var context = new Entities())

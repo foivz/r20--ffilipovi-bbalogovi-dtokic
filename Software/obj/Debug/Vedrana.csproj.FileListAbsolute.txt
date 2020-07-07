@@ -211,3 +211,4 @@ C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\bin\Debug\Lib.pdb
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.EvidencijaZaposlenika.resources
 C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.RegistracijaZaposlenika.resources
+C:\Users\Bobi\Desktop\FOI\PI\r20--ffilipovi-bbalogovi-dtokic\Software\obj\Debug\Vedrana.Filipovic.NovaLozinka.resources

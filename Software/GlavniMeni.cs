@@ -160,7 +160,7 @@ namespace Vedrana
             aktivniMeniIcon.IconChar = FontAwesome.Sharp.IconChar.Key;
             aktivniMeniLbl.Text = "Promjena zaporke";
             // otvori formu promjene zaporke
-            // otvoriFormu();
+            otvoriFormu(new NovaLozinka(LogIn._zaposlenik));
         }
 
         private void odjavaBtn_Click(object sender, EventArgs e)
